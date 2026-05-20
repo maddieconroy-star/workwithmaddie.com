@@ -171,14 +171,14 @@ h1.article-title{font-size:clamp(2rem,4.5vw,3rem);color:var(--cream);letter-spac
   <div class="logo" onclick="goHome()">Maddie Conroy <span>SEO</span></div>
   <div class="nav-links">
     <a onclick="goHome()">Home</a>
-    <a onclick="scrollTo('about')">About</a>
-    <a onclick="scrollTo('services')">Services</a>
-    <a onclick="scrollTo('process')">Process</a>
-    <a onclick="scrollTo('guides')">Guides</a>
-    <a onclick="scrollTo('blog')">Blog</a>
-    <a onclick="scrollTo('contact')">Contact</a>
+    <a onclick="goTo('about')">About</a>
+    <a onclick="goTo('services')">Services</a>
+    <a onclick="goTo('process')">Process</a>
+    <a onclick="goTo('guides')">Guides</a>
+    <a onclick="goTo('blog')">Blog</a>
+    <a onclick="goTo('contact')">Contact</a>
   </div>
-  <button class="nav-btn" onclick="scrollTo('contact')">Work with me</button>
+  <button class="nav-btn" onclick="goTo('contact')">Work with me</button>
 </nav>
 
 <div class="hero-gradient">
@@ -189,8 +189,8 @@ h1.article-title{font-size:clamp(2rem,4.5vw,3rem);color:var(--cream);letter-spac
     <h1>Maddie Conroy</h1>
     <p class="hero-sub">SEO Specialist, <strong>Built Around You</strong></p>
     <div class="hero-btns">
-      <button class="btn-p" onclick="scrollTo('contact')">Work with me</button>
-      <button class="btn-o" onclick="scrollTo('services')">View Services</button>
+      <button class="btn-p" onclick="goTo('contact')">Work with me</button>
+      <button class="btn-o" onclick="goTo('services')">View Services</button>
     </div>
   </div>
   <div class="hero-right"><div class="avatar">M</div></div>
@@ -262,7 +262,7 @@ h1.article-title{font-size:clamp(2rem,4.5vw,3rem);color:var(--cream);letter-spac
     <h2 class="section-h">SEO specialist.<br>Results focused.</h2>
     <p>I am Maddie Conroy, an SEO specialist with agency experience across on-page optimization, local SEO, keyword research, and content strategy. I have worked with clients ranging from local businesses to regional brands, and agencies needing a reliable SEO partner.</p>
     <p>I care about the work actually working. Clear communication, deliverables you can understand, and strategy built around your goals. Not a recycled template.</p>
-    <button class="btn-p" style="margin-top:1.5rem" onclick="scrollTo('contact')">Get in touch</button>
+    <button class="btn-p" style="margin-top:1.5rem" onclick="goTo('contact')">Get in touch</button>
   </div>
   <div>
     <div class="stats-grid">
@@ -330,19 +330,19 @@ h1.article-title{font-size:clamp(2rem,4.5vw,3rem);color:var(--cream);letter-spac
   <p>Whether you need on-page work, local SEO, content strategy, or an agency SEO partner. Let us talk about what you are building.</p>
   <div class="cta-btns">
     <a href="mailto:maddie.conroy@workwithmaddie.com" class="btn-p">Start a conversation</a>
-    <button class="btn-o" onclick="scrollTo('services')">View services</button>
+    <button class="btn-o" onclick="goTo('services')">View services</button>
   </div>
 </div></div>
 
 <footer>
   <div style="font-family:'Fraunces',serif;font-weight:700;font-size:1rem;color:var(--cream)">Maddie Conroy <span style="color:var(--accent)">SEO</span></div>
   <div class="foot-links">
-    <span onclick="scrollTo('services')">Services</span>
-    <span onclick="scrollTo('about')">About</span>
-    <span onclick="scrollTo('process')">Process</span>
-    <span onclick="scrollTo('guides')">Guides</span>
-    <span onclick="scrollTo('blog')">Blog</span>
-    <span onclick="scrollTo('contact')">Contact</span>
+    <span onclick="goTo('services')">Services</span>
+    <span onclick="goTo('about')">About</span>
+    <span onclick="goTo('process')">Process</span>
+    <span onclick="goTo('guides')">Guides</span>
+    <span onclick="goTo('blog')">Blog</span>
+    <span onclick="goTo('contact')">Contact</span>
   </div>
   <div>2026 workwithmaddie.com</div>
 </footer>
@@ -539,7 +539,7 @@ h1.article-title{font-size:clamp(2rem,4.5vw,3rem);color:var(--cream);letter-spac
 </div>
 
 <script>
-function scrollTo(id){
+function goTo(id){
   var el = document.getElementById(id);
   if(el) el.scrollIntoView({behavior:'smooth'});
 }
