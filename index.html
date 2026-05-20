@@ -1,332 +1,153 @@
 <!DOCTYPE html>
-<!-- saved from url=(0050)"en"><head>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Maddie Conroy – SEO Specialist</title>
-<link rel="preconnect" href="https://fonts.googleapis.com/">
-<link href="" rel="stylesheet">
+<title>Maddie Conroy SEO Specialist</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:        #f7f9f4;
-  --bg-mid:    #edf3e8;
-  --bg-card:   #ffffff;
-  --bg-hover:  #eaf2e4;
-  --accent:    #2d6a3f;
-  --accent-hi: #3a8a52;
-  --cream:     #1a2e1c;
-  --cream-dim: #4a6550;
-  --muted:     rgba(26,46,28,0.50);
-  --border:    rgba(26,46,28,0.10);
-  --border-md: rgba(26,46,28,0.16);
-  --white:     #ffffff;
-  --grid-line: rgba(26,46,28,0.055);
+  --bg:#f7f9f4;--bg-mid:#edf3e8;--bg-card:#ffffff;--bg-hover:#eaf2e4;
+  --accent:#2d6a3f;--accent-hi:#3a8a52;
+  --cream:#1a2e1c;--cream-dim:#4a6550;--muted:rgba(26,46,28,0.50);
+  --border:rgba(26,46,28,0.10);--border-md:rgba(26,46,28,0.16);
+  --grid-line:rgba(26,46,28,0.055);
 }
 html{scroll-behavior:smooth}
 body{
-  background:var(--bg);
-  color:var(--cream);
-  font-family:'Inter',sans-serif;
-  font-size:16px;
-  line-height:1.7;
-  overflow-x:hidden;
-  background-image:
-    linear-gradient(var(--grid-line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background:var(--bg);color:var(--cream);
+  font-family:"Inter",sans-serif;font-size:16px;line-height:1.7;overflow-x:hidden;
+  background-image:linear-gradient(var(--grid-line) 1px,transparent 1px),linear-gradient(90deg,var(--grid-line) 1px,transparent 1px);
   background-size:72px 72px;
 }
-
-/* ── HERO GRADIENT ── */
-.hero-gradient{
-  background:
-    radial-gradient(ellipse at 0% 0%, rgba(180,195,230,0.45) 0%, transparent 55%),
-    radial-gradient(ellipse at 100% 30%, rgba(180,220,195,0.35) 0%, transparent 50%),
-    radial-gradient(ellipse at 60% 100%, rgba(245,225,160,0.30) 0%, transparent 50%),
-    var(--bg);
-  border-bottom:1px solid var(--border);
-}
 a{color:inherit;text-decoration:none}
-h1,h2,h3{font-family:'Fraunces',serif;line-height:1.1;font-weight:700}
+h1,h2,h3{font-family:"Fraunces",serif;line-height:1.1;font-weight:700}
 p{color:var(--cream-dim)}
-
-/* ── NAV ── */
-nav{
-  position:fixed;top:0;left:0;right:0;z-index:100;
-  display:flex;align-items:center;justify-content:space-between;
-  padding:1rem 3rem;
-  background:rgba(255,255,255,0.95);
-  backdrop-filter:blur(14px);
-  border-bottom:1px solid var(--border);
-}
-.logo{
-  font-family:'Fraunces',serif;
-  font-weight:700;font-size:1.15rem;
-  color:var(--cream);letter-spacing:-0.01em;
-}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1rem 3rem;background:rgba(255,255,255,0.95);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+.logo{font-family:"Fraunces",serif;font-weight:700;font-size:1.15rem;color:var(--cream);cursor:pointer}
 .logo span{color:var(--accent)}
-.nav-links{display:flex;gap:2.2rem;font-size:0.88rem;font-weight:400;color:var(--cream-dim)}
-.nav-links a:hover{color:var(--cream);transition:color .15s}
-.nav-btn{
-  font-size:0.88rem;font-weight:500;
-  background:var(--accent);color:#ffffff;
-  padding:0.5rem 1.4rem;border-radius:100px;
-  letter-spacing:0.01em;
-  transition:background .15s;
-}
+.nav-links{display:flex;gap:2.2rem;font-size:0.88rem;color:var(--cream-dim)}
+.nav-links a{cursor:pointer}
+.nav-links a:hover{color:var(--cream)}
+.nav-btn{font-size:0.88rem;font-weight:500;background:var(--accent);color:#fff;padding:0.5rem 1.4rem;border-radius:100px;cursor:pointer}
 .nav-btn:hover{background:var(--accent-hi)}
-
-/* ── HERO ── */
-.hero-wrap{
-  min-height:100vh;display:flex;align-items:center;
-  max-width:1160px;margin:0 auto;
-  padding:6rem 3rem 3rem;
-  gap:3rem;
-}
+.hero-gradient{background:radial-gradient(ellipse at 0% 0%,rgba(180,195,230,0.45) 0%,transparent 55%),radial-gradient(ellipse at 100% 30%,rgba(180,220,195,0.35) 0%,transparent 50%),radial-gradient(ellipse at 60% 100%,rgba(245,225,160,0.30) 0%,transparent 50%),var(--bg);border-bottom:1px solid var(--border)}
+.hero-wrap{min-height:100vh;display:flex;align-items:center;max-width:1160px;margin:0 auto;padding:6rem 3rem 3rem;gap:3rem}
 .hero-left{flex:1;min-width:0}
-.badge{
-  display:inline-flex;align-items:center;gap:0.5rem;
-  border:1px solid var(--border-md);
-  border-radius:100px;padding:0.3rem 0.85rem;
-  font-size:0.78rem;font-weight:500;letter-spacing:0.05em;
-  color:var(--accent);margin-bottom:1.8rem;
-}
+.badge{display:inline-flex;align-items:center;gap:0.5rem;border:1px solid var(--border-md);border-radius:100px;padding:0.3rem 0.85rem;font-size:0.78rem;font-weight:500;color:var(--accent);margin-bottom:1.8rem}
 .dot{width:6px;height:6px;border-radius:50%;background:#4ade80;flex-shrink:0;animation:blink 2s ease-in-out infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
-h1{
-  font-size:clamp(3.2rem,6.5vw,5.2rem);
-  color:var(--cream);
-  font-weight:700;
-  letter-spacing:-0.03em;
-  margin-bottom:.5rem;
-}
-.hero-sub{
-  font-family:'Fraunces',serif;
-  font-size:clamp(1.1rem,2.2vw,1.5rem);
-  font-weight:400;font-style:italic;
-  color:var(--cream-dim);margin-bottom:2.2rem;
-}
+h1{font-size:clamp(3.2rem,6.5vw,5.2rem);color:var(--cream);font-weight:700;letter-spacing:-0.03em;margin-bottom:.5rem}
+.hero-sub{font-family:"Fraunces",serif;font-size:clamp(1.1rem,2.2vw,1.5rem);font-weight:400;font-style:italic;color:var(--cream-dim);margin-bottom:2.2rem}
 .hero-sub strong{color:var(--accent);font-style:normal;font-weight:600}
 .hero-btns{display:flex;gap:.9rem;flex-wrap:wrap;margin-bottom:2.5rem}
-.btn-p{
-  background:var(--accent);color:#ffffff;
-  padding:.8rem 1.7rem;border-radius:7px;
-  font-size:.95rem;font-weight:600;
-  transition:background .15s,transform .12s;
-  display:inline-block;
-}
-.btn-p:hover{background:var(--accent-hi);transform:translateY(-1px)}
-.btn-o{
-  border:1px solid var(--border-md);color:var(--cream-dim);
-  padding:.8rem 1.7rem;border-radius:7px;
-  font-size:.95rem;font-weight:400;
-  transition:border-color .15s,color .15s;
-  display:inline-block;
-}
+.btn-p{background:var(--accent);color:#fff;padding:.8rem 1.7rem;border-radius:7px;font-size:.95rem;font-weight:600;display:inline-block;cursor:pointer;border:none;font-family:"Inter",sans-serif}
+.btn-p:hover{background:var(--accent-hi)}
+.btn-o{border:1px solid var(--border-md);color:var(--cream-dim);padding:.8rem 1.7rem;border-radius:7px;font-size:.95rem;display:inline-block;cursor:pointer;background:none;font-family:"Inter",sans-serif}
 .btn-o:hover{border-color:var(--cream-dim);color:var(--cream)}
-.hero-right{
-  flex-shrink:0;width:300px;
-  display:flex;align-items:center;justify-content:center;
-}
-.avatar{
-  width:260px;height:260px;border-radius:50%;
-  background:var(--bg-mid);
-  border:1px solid var(--border-md);
-  display:flex;align-items:center;justify-content:center;
-  font-family:'Fraunces',serif;font-size:4.5rem;font-weight:700;
-  color:var(--accent);position:relative;
-}
-.avatar::after{
-  content:'';position:absolute;inset:-14px;border-radius:50%;
-  border:1px dashed rgba(109,184,122,.22);
-}
-
-/* ── TICKER ── */
-.ticker-outer{
-  overflow:hidden;
-  border-top:1px solid var(--border);
-  border-bottom:1px solid var(--border);
-  background:var(--bg-mid);
-  padding:.85rem 0;
-}
-.ticker-inner{
-  display:flex;width:max-content;
-  animation:roll 32s linear infinite;
-}
+.hero-right{flex-shrink:0;width:300px;display:flex;align-items:center;justify-content:center}
+.avatar{width:260px;height:260px;border-radius:50%;background:var(--bg-mid);border:1px solid var(--border-md);display:flex;align-items:center;justify-content:center;font-family:"Fraunces",serif;font-size:4.5rem;font-weight:700;color:var(--accent);position:relative}
+.avatar::after{content:"";position:absolute;inset:-14px;border-radius:50%;border:1px dashed rgba(109,184,122,.22)}
+.ticker-outer{overflow:hidden;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--bg-mid);padding:.85rem 0}
+.ticker-inner{display:flex;width:max-content;animation:roll 32s linear infinite}
 @keyframes roll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-.tick{
-  white-space:nowrap;padding:0 2.2rem;
-  font-size:.78rem;font-weight:500;letter-spacing:.1em;
-  text-transform:uppercase;color:var(--cream-dim);
-}
+.tick{white-space:nowrap;padding:0 2.2rem;font-size:.78rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--cream-dim)}
 .tick-dot{color:var(--accent);margin-right:.4rem}
-
-/* ── SECTION SHELL ── */
 .section{padding:5.5rem 3rem;max-width:1160px;margin:0 auto}
-.eyebrow{
-  font-size:.72rem;font-weight:600;letter-spacing:.14em;
-  text-transform:uppercase;color:var(--accent);margin-bottom:.9rem;
-}
-.section-h{
-  font-size:clamp(1.9rem,3.8vw,2.8rem);
-  color:var(--cream);letter-spacing:-.02em;margin-bottom:1rem;
-}
+.eyebrow{font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:.9rem}
+.section-h{font-size:clamp(1.9rem,3.8vw,2.8rem);color:var(--cream);letter-spacing:-.02em;margin-bottom:1rem}
 .section-p{font-size:1rem;color:var(--muted);max-width:520px;margin-bottom:3rem}
-
-/* ── SERVICES GRID ── */
-.svc-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(310px,1fr));
-  gap:1px;
-  border:1px solid var(--border);
-  border-radius:12px;overflow:hidden;
-}
-.svc{
-  background:var(--bg-card);
-  padding:2rem;
-  transition:background .2s;
-  position:relative;
-}
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:1px;border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.svc{background:var(--bg-card);padding:2rem;transition:background .2s;position:relative}
 .svc:hover{background:var(--bg-hover)}
-.svc::after{
-  content:'';position:absolute;
-  right:0;bottom:0;left:0;height:1px;
-  background:var(--border);
-}
+.svc::after{content:"";position:absolute;right:0;bottom:0;left:0;height:1px;background:var(--border)}
 .svc-em{font-size:1.4rem;margin-bottom:.9rem}
-.svc-title{
-  font-family:'Fraunces',serif;font-size:1.05rem;font-weight:600;
-  color:var(--cream);margin-bottom:.5rem;
-}
+.svc-title{font-family:"Fraunces",serif;font-size:1.05rem;font-weight:600;color:var(--cream);margin-bottom:.5rem}
 .svc-body{font-size:.88rem;color:var(--muted);line-height:1.65}
-.svc-arrow{
-  display:inline-flex;align-items:center;gap:.3rem;
-  font-size:.82rem;font-weight:500;color:var(--accent);margin-top:.9rem;
-}
-
-/* ── TWO CLIENTS ── */
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
-@media(max-width:680px){.two-col{grid-template-columns:1fr}}
-.client-card{
-  background:var(--bg-card);
-  border:1px solid var(--border);
-  border-radius:12px;padding:2rem;
-}
-.client-tag{
-  font-size:.7rem;font-weight:600;letter-spacing:.12em;
-  text-transform:uppercase;color:var(--accent);margin-bottom:.9rem;
-}
-.client-card h3{
-  font-family:'Fraunces',serif;font-size:1.25rem;
-  color:var(--cream);font-weight:700;margin-bottom:1.1rem;
-}
+.client-card{background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:2rem}
+.client-tag{font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:.9rem}
+.client-card h3{font-family:"Fraunces",serif;font-size:1.25rem;color:var(--cream);font-weight:700;margin-bottom:1.1rem}
 .check-list{list-style:none;display:flex;flex-direction:column;gap:.55rem}
-.check-list li{
-  display:flex;align-items:flex-start;gap:.55rem;
-  font-size:.9rem;color:var(--cream-dim);
-}
-.check-list li::before{
-  content:'→';color:var(--accent);
-  flex-shrink:0;margin-top:.05rem;font-size:.85rem;
-}
-
-/* ── ABOUT + STATS ── */
+.check-list li{display:flex;align-items:flex-start;gap:.55rem;font-size:.9rem;color:var(--cream-dim)}
+.check-list li::before{content:"→";color:var(--accent);flex-shrink:0;margin-top:.05rem;font-size:.85rem}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
-@media(max-width:780px){.about-grid{grid-template-columns:1fr;gap:2.5rem}}
 .about-body p{font-size:.98rem;color:var(--cream-dim);margin-bottom:1rem}
 .stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
-.stat{
-  background:var(--bg-card);border:1px solid var(--border);
-  border-radius:10px;padding:1.3rem 1.4rem;
-}
-.stat-n{
-  font-family:'Fraunces',serif;
-  font-size:2.1rem;font-weight:700;color:var(--cream);
-}
+.stat{background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:1.3rem 1.4rem}
+.stat-n{font-family:"Fraunces",serif;font-size:2.1rem;font-weight:700;color:var(--cream)}
 .stat-l{font-size:.78rem;color:var(--muted);margin-top:.2rem;line-height:1.4}
-
-/* ── PROCESS ── */
-.steps{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:0;
-  border:1px solid var(--border);border-radius:12px;overflow:hidden;
-}
-.step{
-  padding:2rem;
-  border-right:1px solid var(--border);
-  background:var(--bg-card);
-}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.step{padding:2rem;border-right:1px solid var(--border);background:var(--bg-card)}
 .step:last-child{border-right:none}
-.step-n{
-  font-family:'Fraunces',serif;font-size:.75rem;font-weight:600;
-  color:var(--accent);letter-spacing:.1em;margin-bottom:.9rem;
-}
-.step-t{
-  font-family:'Fraunces',serif;font-size:1rem;font-weight:700;
-  color:var(--cream);margin-bottom:.6rem;
-}
+.step-n{font-family:"Fraunces",serif;font-size:.75rem;font-weight:600;color:var(--accent);letter-spacing:.1em;margin-bottom:.9rem}
+.step-t{font-family:"Fraunces",serif;font-size:1rem;font-weight:700;color:var(--cream);margin-bottom:.6rem}
 .step-d{font-size:.87rem;color:var(--muted);line-height:1.65}
-
-/* ── WHY ── */
-.why-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:1rem;
-}
-.why{
-  padding:1.6rem;
-  border:1px solid var(--border);border-radius:10px;
-  background:var(--bg-card);
-}
-.why-t{
-  font-family:'Fraunces',serif;font-size:.98rem;font-weight:600;
-  color:var(--cream);margin-bottom:.45rem;
-}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+.why{padding:1.6rem;border:1px solid var(--border);border-radius:10px;background:var(--bg-card)}
+.why-t{font-family:"Fraunces",serif;font-size:.98rem;font-weight:600;color:var(--cream);margin-bottom:.45rem}
 .why-d{font-size:.86rem;color:var(--muted);line-height:1.6}
-
-/* ── CTA BANNER ── */
+.guides-list{display:flex;flex-direction:column;border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.guide-row{display:flex;align-items:flex-start;gap:1.5rem;padding:1.5rem 1.8rem;border-bottom:1px solid var(--border);background:var(--bg-card);transition:background .15s;cursor:pointer;text-decoration:none;color:inherit}
+.guide-row:last-child{border-bottom:none}
+.guide-row:hover{background:var(--bg-hover)}
+.guide-coming{cursor:default}
+.guide-coming:hover{background:var(--bg-card)}
+.guide-num{font-family:"Fraunces",serif;font-size:1rem;font-weight:700;color:var(--accent);flex-shrink:0;width:28px;margin-top:.15rem}
+.guide-body{flex:1;min-width:0}
+.guide-title{font-family:"Fraunces",serif;font-size:1rem;font-weight:600;color:var(--cream);margin-bottom:.35rem}
+.guide-desc{font-size:.87rem;color:var(--muted);line-height:1.6}
+.guide-meta{font-size:.78rem;font-weight:500;color:var(--muted);flex-shrink:0;white-space:nowrap;margin-top:.2rem}
+.guide-soon{color:var(--accent);opacity:.7}
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.2rem}
+.blog-card{display:flex;flex-direction:column;background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:1.6rem;cursor:pointer;transition:border-color .2s,transform .15s}
+.blog-card:hover{border-color:var(--border-md);transform:translateY(-2px)}
+.blog-tags{margin-bottom:.9rem}
+.blog-tag{font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;background:var(--bg-mid);color:var(--accent);border:1px solid var(--border-md);padding:.25rem .7rem;border-radius:100px}
+.blog-title{font-family:"Fraunces",serif;font-size:1.05rem;font-weight:700;color:var(--cream);line-height:1.3;margin-bottom:.7rem}
+.blog-desc{font-size:.87rem;color:var(--muted);line-height:1.65;flex:1;margin-bottom:1.2rem}
+.blog-foot{display:flex;align-items:center;gap:.4rem;flex-wrap:wrap;font-size:.78rem;color:var(--muted);margin-top:auto}
+.blog-author{font-weight:500;color:var(--cream-dim)}
+.blog-dot{opacity:.4}
 .cta-outer{padding:0 3rem 5rem;max-width:1160px;margin:0 auto}
-.cta-box{
-  background:var(--bg-card);
-  border:1px solid var(--border);
-  border-radius:16px;
-  padding:4.5rem 3rem;
-  text-align:center;
-  position:relative;overflow:hidden;
-}
-.cta-box::before{
-  content:'';position:absolute;top:-80px;right:-80px;
-  width:360px;height:360px;border-radius:50%;
-  background:radial-gradient(circle,rgba(109,184,122,.10) 0%,transparent 68%);
-  pointer-events:none;
-}
-.cta-box::after{
-  content:'';position:absolute;bottom:-60px;left:-60px;
-  width:280px;height:280px;border-radius:50%;
-  background:radial-gradient(circle,rgba(109,184,122,.07) 0%,transparent 68%);
-  pointer-events:none;
-}
-.cta-eyebrow{
-  font-size:.72rem;font-weight:600;letter-spacing:.14em;
-  text-transform:uppercase;color:var(--accent);margin-bottom:1rem;
-}
-.cta-box h2{
-  font-size:clamp(1.8rem,3.5vw,2.6rem);
-  color:var(--cream);letter-spacing:-.02em;margin-bottom:1rem;
-}
+.cta-box{background:var(--bg-card);border:1px solid var(--border);border-radius:16px;padding:4.5rem 3rem;text-align:center;position:relative;overflow:hidden}
+.cta-box::before{content:"";position:absolute;top:-80px;right:-80px;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(109,184,122,.10) 0%,transparent 68%);pointer-events:none}
+.cta-eyebrow{font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
+.cta-box h2{font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--cream);letter-spacing:-.02em;margin-bottom:1rem}
 .cta-box p{color:var(--muted);max-width:460px;margin:0 auto 2.2rem;font-size:.98rem}
 .cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
-
-/* ── FOOTER ── */
-footer{
-  border-top:1px solid var(--border);
-  max-width:1160px;margin:0 auto;
-  padding:2rem 3rem;
-  display:flex;align-items:center;justify-content:space-between;
-  font-size:.82rem;color:var(--muted);
-}
+footer{border-top:1px solid var(--border);max-width:1160px;margin:0 auto;padding:2rem 3rem;display:flex;align-items:center;justify-content:space-between;font-size:.82rem;color:var(--muted)}
 .foot-links{display:flex;gap:2rem}
-.foot-links a:hover{color:var(--cream)}
-
+.foot-links span{cursor:pointer}
+.foot-links span:hover{color:var(--cream)}
+/* ARTICLE OVERLAY */
+.page-overlay{display:none;position:fixed;inset:0;background:var(--bg);z-index:200;overflow-y:auto}
+.page-overlay.active{display:block}
+.back-bar{position:sticky;top:0;z-index:300;background:rgba(255,255,255,0.97);border-bottom:1px solid var(--border);padding:.7rem 2rem;display:flex;align-items:center}
+.back-bar button{background:none;border:none;cursor:pointer;display:flex;align-items:center;gap:.45rem;font-family:"Inter",sans-serif;font-size:.88rem;font-weight:500;color:var(--accent);padding:0}
+.back-bar button svg{width:16px;height:16px;stroke:var(--accent);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.article-hero{padding:5rem 2rem 3rem;max-width:760px;margin:0 auto;border-bottom:1px solid var(--border)}
+.article-eyebrow{font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem;display:flex;align-items:center;gap:.6rem}
+.article-eyebrow span{cursor:pointer;opacity:.7}
+.article-eyebrow span:hover{opacity:1}
+.sep{opacity:.4}
+h1.article-title{font-size:clamp(2rem,4.5vw,3rem);color:var(--cream);letter-spacing:-.025em;margin-bottom:1.2rem}
+.article-meta{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;font-size:.83rem;color:var(--muted);margin-top:1.5rem}
+.meta-dot{opacity:.35}
+.meta-tag{background:var(--bg-mid);color:var(--accent);border:1px solid var(--border-md);padding:.2rem .65rem;border-radius:100px;font-size:.72rem;font-weight:600;letter-spacing:.07em;text-transform:uppercase}
+.article-body{max-width:760px;margin:0 auto;padding:3.5rem 2rem 5rem}
+.article-body h2{font-size:1.5rem;color:var(--cream);margin:2.5rem 0 .9rem;letter-spacing:-.015em}
+.article-body h3{font-size:1.15rem;color:var(--cream);margin:2rem 0 .7rem}
+.article-body p{font-size:1rem;line-height:1.8;color:var(--cream-dim);margin-bottom:1.1rem}
+.article-body ul,.article-body ol{margin:.5rem 0 1.3rem 1.2rem;display:flex;flex-direction:column;gap:.45rem}
+.article-body li{font-size:1rem;color:var(--cream-dim);line-height:1.7}
+.article-body strong{color:var(--cream);font-weight:600}
+.callout{background:var(--bg-mid);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;padding:1.1rem 1.4rem;margin:1.8rem 0}
+.callout p{margin:0;font-size:.95rem}
+.article-cta{background:var(--bg-mid);border:1px solid var(--border);border-radius:12px;padding:2rem;margin:3rem 0 0;text-align:center}
+.article-cta h3{font-size:1.2rem;color:var(--cream);margin-bottom:.6rem}
+.article-cta p{font-size:.93rem;margin-bottom:1.2rem}
 @media(max-width:900px){
   .hero-wrap{flex-direction:column;padding-top:5.5rem;text-align:center}
   .hero-btns{justify-content:center}
@@ -339,226 +160,78 @@ footer{
   .steps{grid-template-columns:1fr}
   .step{border-right:none;border-bottom:1px solid var(--border)}
   .step:last-child{border-bottom:none}
+  .two-col{grid-template-columns:1fr}
+  .about-grid{grid-template-columns:1fr;gap:2.5rem}
 }
-
-/* ── GUIDES ── */
-.guides-list{display:flex;flex-direction:column;border:1px solid var(--border);border-radius:12px;overflow:hidden}
-.guide-row{
-  display:flex;align-items:flex-start;gap:1.5rem;
-  padding:1.5rem 1.8rem;
-  border-bottom:1px solid var(--border);
-  background:var(--bg-card);
-  transition:background .15s;
-  cursor:pointer;
-  text-decoration:none;
-  color:inherit;
-}
-.guide-row:last-child{border-bottom:none}
-.guide-row:hover{background:var(--bg-hover)}
-.guide-coming{cursor:default}
-.guide-coming:hover{background:var(--bg-card)}
-.guide-num{
-  font-family:'Fraunces',serif;font-size:1rem;font-weight:700;
-  color:var(--accent);flex-shrink:0;width:28px;margin-top:.15rem;
-}
-.guide-body{flex:1;min-width:0}
-.guide-title{
-  font-family:'Fraunces',serif;font-size:1rem;font-weight:600;
-  color:var(--cream);margin-bottom:.35rem;
-}
-.guide-desc{font-size:.87rem;color:var(--muted);line-height:1.6}
-.guide-meta{
-  font-size:.78rem;font-weight:500;color:var(--muted);
-  flex-shrink:0;white-space:nowrap;margin-top:.2rem;
-}
-.guide-soon{color:var(--accent);opacity:.7}
-
-/* ── BLOG ── */
-.blog-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:1.2rem;
-}
-.blog-card{
-  display:flex;flex-direction:column;
-  background:var(--bg-card);
-  border:1px solid var(--border);
-  border-radius:12px;
-  padding:1.6rem;
-  text-decoration:none;color:inherit;
-  transition:border-color .2s,transform .15s;
-}
-.blog-card:hover{border-color:var(--border-md);transform:translateY(-2px)}
-.blog-tags{margin-bottom:.9rem}
-.blog-tag{
-  font-size:.72rem;font-weight:600;letter-spacing:.08em;
-  text-transform:uppercase;
-  background:var(--bg-mid);
-  color:var(--accent);
-  border:1px solid var(--border-md);
-  padding:.25rem .7rem;border-radius:100px;
-}
-.blog-title{
-  font-family:'Fraunces',serif;font-size:1.05rem;font-weight:700;
-  color:var(--cream);line-height:1.3;margin-bottom:.7rem;
-}
-.blog-desc{font-size:.87rem;color:var(--muted);line-height:1.65;flex:1;margin-bottom:1.2rem}
-.blog-foot{
-  display:flex;align-items:center;gap:.4rem;flex-wrap:wrap;
-  font-size:.78rem;color:var(--muted);margin-top:auto;
-}
-.blog-author{font-weight:500;color:var(--cream-dim)}
-.blog-dot{opacity:.4}
-
-
-/* ── ARTICLE PAGES ── */
-.page-overlay{display:none;position:fixed;inset:0;background:var(--bg);z-index:200;overflow-y:auto;}
-.page-overlay.active{display:block;}
-.article-hero{padding:8rem 2rem 3rem;max-width:760px;margin:0 auto;border-bottom:1px solid var(--border);}
-.article-eyebrow{font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem;display:flex;align-items:center;gap:.6rem;}
-.article-eyebrow a{color:var(--accent);opacity:.7;cursor:pointer;}
-.article-eyebrow a:hover{opacity:1;}
-.sep{opacity:.4;}
-h1.article-title{font-size:clamp(2rem,4.5vw,3rem);color:var(--cream);letter-spacing:-.025em;margin-bottom:1.2rem;}
-.article-meta{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;font-size:.83rem;color:var(--muted);margin-top:1.5rem;}
-.meta-dot{opacity:.35;}
-.meta-tag{background:var(--bg-mid);color:var(--accent);border:1px solid var(--border-md);padding:.2rem .65rem;border-radius:100px;font-size:.72rem;font-weight:600;letter-spacing:.07em;text-transform:uppercase;}
-.article-body{max-width:760px;margin:0 auto;padding:3.5rem 2rem 5rem;}
-.article-body h2{font-size:1.5rem;color:var(--cream);margin:2.5rem 0 .9rem;letter-spacing:-.015em;}
-.article-body h3{font-size:1.15rem;color:var(--cream);margin:2rem 0 .7rem;letter-spacing:-.01em;}
-.article-body p{font-size:1rem;line-height:1.8;color:var(--cream-dim);margin-bottom:1.1rem;}
-.article-body ul,.article-body ol{margin:.5rem 0 1.3rem 1.2rem;display:flex;flex-direction:column;gap:.45rem;}
-.article-body li{font-size:1rem;color:var(--cream-dim);line-height:1.7;}
-.article-body strong{color:var(--cream);font-weight:600;}
-.callout{background:var(--bg-mid);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;padding:1.1rem 1.4rem;margin:1.8rem 0;}
-.callout p{margin:0;font-size:.95rem;}
-.article-body hr{border:none;border-top:1px solid var(--border);margin:2.5rem 0;}
-.article-cta{background:var(--bg-mid);border:1px solid var(--border);border-radius:12px;padding:2rem;margin:3rem 0 0;text-align:center;}
-.article-cta h3{font-size:1.2rem;color:var(--cream);margin-bottom:.6rem;}
-.article-cta p{font-size:.93rem;margin-bottom:1.2rem;}
-.back-btn{display:inline-flex;align-items:center;gap:.4rem;font-size:.85rem;color:var(--accent);font-weight:500;cursor:pointer;margin-bottom:1rem;}
-.back-btn:hover{opacity:.75;}
-
-
-/* ── BACK BAR ── */
-.back-bar{
-  position:sticky;top:0;z-index:300;
-  background:rgba(255,255,255,0.97);
-  border-bottom:1px solid var(--border);
-  padding:.7rem 2rem;
-  display:flex;align-items:center;gap:.5rem;
-}
-.back-bar button{
-  background:none;border:none;cursor:pointer;
-  display:flex;align-items:center;gap:.45rem;
-  font-family:'Inter',sans-serif;
-  font-size:.88rem;font-weight:500;
-  color:var(--accent);padding:0;
-}
-.back-bar button:hover{opacity:.7}
-.back-bar button svg{width:16px;height:16px;stroke:var(--accent);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-
 </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
-  <div class="logo">Maddie Conroy <span>SEO</span></div>
+  <div class="logo" onclick="goHome()">Maddie Conroy <span>SEO</span></div>
   <div class="nav-links">
-    <a href="#">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#process">Process</a>
-    <a href="#guides">Guides</a>
-    <a href="#blog">Blog</a>
-    <a href="#contact">Contact</a>
+    <a onclick="goHome()">Home</a>
+    <a onclick="scrollTo('about')">About</a>
+    <a onclick="scrollTo('services')">Services</a>
+    <a onclick="scrollTo('process')">Process</a>
+    <a onclick="scrollTo('guides')">Guides</a>
+    <a onclick="scrollTo('blog')">Blog</a>
+    <a onclick="scrollTo('contact')">Contact</a>
   </div>
-  <a href="#contact" class="nav-btn">Work with me</a>
+  <button class="nav-btn" onclick="scrollTo('contact')">Work with me</button>
 </nav>
 
-<!-- HERO -->
 <div class="hero-gradient">
 <div style="max-width:1160px;margin:0 auto">
-  <div class="hero-wrap">
-    <div class="hero-left">
-      <div class="badge"><span class="dot"></span> Available for new clients</div>
-      <h1>Maddie Conroy</h1>
-      <p class="hero-sub">SEO Specialist, <strong>Built Around You</strong></p>
-      <div class="hero-btns">
-        <a href="#contact" class="btn-p">Work with me</a>
-        <a href="#services" class="btn-o">View Services</a>
-      </div>
-    </div>
-    <div class="hero-right">
-      <div class="avatar">M</div>
+<div class="hero-wrap">
+  <div class="hero-left">
+    <div class="badge"><span class="dot"></span> Available for new clients</div>
+    <h1>Maddie Conroy</h1>
+    <p class="hero-sub">SEO Specialist, <strong>Built Around You</strong></p>
+    <div class="hero-btns">
+      <button class="btn-p" onclick="scrollTo('contact')">Work with me</button>
+      <button class="btn-o" onclick="scrollTo('services')">View Services</button>
     </div>
   </div>
+  <div class="hero-right"><div class="avatar">M</div></div>
+</div>
 </div>
 </div>
 
-<!-- TICKER -->
-<div class="ticker-outer">
-  <div class="ticker-inner">
-    <div class="tick"><span class="tick-dot">✦</span>On-Page SEO</div>
-    <div class="tick"><span class="tick-dot">✦</span>Keyword Research</div>
-    <div class="tick"><span class="tick-dot">✦</span>Local SEO</div>
-    <div class="tick"><span class="tick-dot">✦</span>Google Business Profile</div>
-    <div class="tick"><span class="tick-dot">✦</span>Content Strategy</div>
-    <div class="tick"><span class="tick-dot">✦</span>Agency Fulfillment</div>
-    <div class="tick"><span class="tick-dot">✦</span>Technical SEO</div>
-    <div class="tick"><span class="tick-dot">✦</span>On-Page SEO</div>
-    <div class="tick"><span class="tick-dot">✦</span>Keyword Research</div>
-    <div class="tick"><span class="tick-dot">✦</span>Local SEO</div>
-    <div class="tick"><span class="tick-dot">✦</span>Google Business Profile</div>
-    <div class="tick"><span class="tick-dot">✦</span>Content Strategy</div>
-    <div class="tick"><span class="tick-dot">✦</span>Agency Fulfillment</div>
-    <div class="tick"><span class="tick-dot">✦</span>Technical SEO</div>
-  </div>
-</div>
+<div class="ticker-outer"><div class="ticker-inner">
+  <div class="tick"><span class="tick-dot">&#10022;</span>On-Page SEO</div>
+  <div class="tick"><span class="tick-dot">&#10022;</span>Keyword Research</div>
+  <div class="tick"><span class="tick-dot">&#10022;</span>Local SEO</div>
+  <div class="tick"><span class="tick-dot">&#10022;</span>Google Business Profile</div>
+  <div class="tick"><span class="tick-dot">&#10022;</span>Content Strategy</div>
+  <div class="tick"><span class="tick-dot">&#10022;</span>Agency Fulfillment</div>
+  <div class="tick"><span class="tick-dot">&#10022;</span>Technical SEO</div>
+  <div class="tick"><span class="tick-dot">&#10022;</span>On-Page SEO</div>
+  <div class="tick"><span class="tick-dot">&#10022;</span>Keyword Research</div>
+  <div class="tick"><span class="tick-dot">&#10022;</span>Local SEO</div>
+  <div class="tick"><span class="tick-dot">&#10022;</span>Google Business Profile</div>
+  <div class="tick"><span class="tick-dot">&#10022;</span>Content Strategy</div>
+  <div class="tick"><span class="tick-dot">&#10022;</span>Agency Fulfillment</div>
+  <div class="tick"><span class="tick-dot">&#10022;</span>Technical SEO</div>
+</div></div>
 
-<!-- SERVICES -->
-<div id="services">
-<div class="section">
+<div id="services"><div class="section">
   <div class="eyebrow">What I do</div>
   <h2 class="section-h">SEO that actually moves the needle</h2>
   <p class="section-p">Strategy-first SEO for businesses and agencies who want real organic growth. No fluff, no recycled templates.</p>
   <div class="svc-grid">
-    <div class="svc">
-      <div class="svc-em">🔍</div>
-      <div class="svc-title">On-Page SEO</div>
-      <div class="svc-body">Full on-page optimization: title tags, meta descriptions, header structure, internal linking, and content aligned to search intent. Every element working together.</div>
-    </div>
-    <div class="svc">
-      <div class="svc-em">📍</div>
-      <div class="svc-title">Local SEO &amp; Google Business Profile</div>
-      <div class="svc-body">Get found by customers in your area. I manage and optimize your GBP, build local citations, and implement strategies that drive real calls and foot traffic.</div>
-    </div>
-    <div class="svc">
-      <div class="svc-em">🗝️</div>
-      <div class="svc-title">Keyword Research</div>
-      <div class="svc-body">Thorough research grounded in search intent, competition analysis, and your business goals. A clear map of what to target and why, not a dump of volume numbers.</div>
-    </div>
-    <div class="svc">
-      <div class="svc-em">✍️</div>
-      <div class="svc-title">Content Strategy</div>
-      <div class="svc-body">Topic clusters, editorial calendars, content briefs, and gap analysis built around what your audience is actually searching for. Every piece has a job to do.</div>
-    </div>
-    <div class="svc">
-      <div class="svc-em">⚙️</div>
-      <div class="svc-title">Technical SEO</div>
-      <div class="svc-body">Crawlability audits, site structure, indexation issues, and Core Web Vitals. I flag blockers and coordinate with your dev team to support the strategy, not replace it.</div>
-    </div>
-    
+    <div class="svc"><div class="svc-em">&#128269;</div><div class="svc-title">On-Page SEO</div><div class="svc-body">Full on-page optimization: title tags, meta descriptions, header structure, internal linking, and content aligned to search intent. Every element working together.</div></div>
+    <div class="svc"><div class="svc-em">&#128205;</div><div class="svc-title">Local SEO &amp; Google Business Profile</div><div class="svc-body">Get found by customers in your area. I manage and optimize your GBP, build local citations, and implement strategies that drive real calls and foot traffic.</div></div>
+    <div class="svc"><div class="svc-em">&#128273;</div><div class="svc-title">Keyword Research</div><div class="svc-body">Thorough research grounded in search intent, competition analysis, and your business goals. A clear map of what to target and why, not a dump of volume numbers.</div></div>
+    <div class="svc"><div class="svc-em">&#9997;</div><div class="svc-title">Content Strategy</div><div class="svc-body">Topic clusters, editorial calendars, content briefs, and gap analysis built around what your audience is actually searching for. Every piece has a job to do.</div></div>
+    <div class="svc"><div class="svc-em">&#9881;</div><div class="svc-title">Technical SEO</div><div class="svc-body">Crawlability audits, site structure, indexation issues, and Core Web Vitals. I flag blockers and coordinate with your dev team to support the strategy, not replace it.</div></div>
   </div>
-</div>
-</div>
+</div></div>
 
-<!-- WHO I WORK WITH -->
 <div class="section">
   <div class="eyebrow">Who I work with</div>
   <h2 class="section-h">Two types of clients.<br>One model that works.</h2>
-  <p class="section-p">Whether you're a business wanting organic visibility or an agency that needs reliable SEO delivery. I've worked with both.</p>
+  <p class="section-p">Whether you are a business wanting organic visibility or an agency that needs reliable SEO delivery. I have worked with both.</p>
   <div class="two-col">
     <div class="client-card">
       <div class="client-tag">For Businesses</div>
@@ -566,8 +239,8 @@ h1.article-title{font-size:clamp(2rem,4.5vw,3rem);color:var(--cream);letter-spac
       <ul class="check-list">
         <li>Local businesses wanting to dominate their area in search</li>
         <li>Small and mid-size companies investing in organic for the first time</li>
-        <li>Brands with a GBP that's never been properly optimized</li>
-        <li>Sites with content that should be ranking but isn't</li>
+        <li>Brands with a GBP that has never been properly optimized</li>
+        <li>Sites with content that should be ranking but is not</li>
       </ul>
     </div>
     <div class="client-card">
@@ -583,1163 +256,310 @@ h1.article-title{font-size:clamp(2rem,4.5vw,3rem);color:var(--cream);letter-spac
   </div>
 </div>
 
-<!-- ABOUT -->
-<div id="about" class="section">
-  <div class="about-grid">
-    <div class="about-body">
-      <div class="eyebrow">About me</div>
-      <h2 class="section-h">SEO specialist.<br>Results focused.</h2>
-      <p>I'm Maddie Conroy, an SEO specialist with agency experience across on-page optimization, local SEO, keyword research, and content strategy. I've worked with clients ranging from local businesses to regional brands, and agencies needing a reliable SEO partner.</p>
-      <p>I care about the work actually working. Clear communication, deliverables you can understand, and strategy built around your goals. Not a recycled template.</p>
-      <a href="#contact" class="btn-p" style="margin-top:1.5rem">Get in touch →</a>
-    </div>
-    <div>
-      <div class="stats-grid">
-        <div class="stat">
-          <div class="stat-n">4+</div>
-          <div class="stat-l">Years agency-side experience</div>
-        </div>
-        <div class="stat">
-          <div class="stat-n">1:1</div>
-          <div class="stat-l">You work with me directly</div>
-        </div>
-        <div class="stat">
-          <div class="stat-n">0</div>
-          <div class="stat-l">Lock-in contracts</div>
-        </div>
-        <div class="stat">
-          <div class="stat-n">Fast</div>
-          <div class="stat-l">Turnaround on all deliverables</div>
-        </div>
-      </div>
-      <p style="font-size:.82rem;color:var(--muted);margin-top:1.2rem;padding-left:.2rem">Currently accepting new clients. Limited availability.</p>
-    </div>
+<div id="about" class="section"><div class="about-grid">
+  <div class="about-body">
+    <div class="eyebrow">About me</div>
+    <h2 class="section-h">SEO specialist.<br>Results focused.</h2>
+    <p>I am Maddie Conroy, an SEO specialist with agency experience across on-page optimization, local SEO, keyword research, and content strategy. I have worked with clients ranging from local businesses to regional brands, and agencies needing a reliable SEO partner.</p>
+    <p>I care about the work actually working. Clear communication, deliverables you can understand, and strategy built around your goals. Not a recycled template.</p>
+    <button class="btn-p" style="margin-top:1.5rem" onclick="scrollTo('contact')">Get in touch</button>
   </div>
-</div>
+  <div>
+    <div class="stats-grid">
+      <div class="stat"><div class="stat-n">4+</div><div class="stat-l">Years agency-side experience</div></div>
+      <div class="stat"><div class="stat-n">1:1</div><div class="stat-l">You work with me directly</div></div>
+      <div class="stat"><div class="stat-n">0</div><div class="stat-l">Lock-in contracts</div></div>
+      <div class="stat"><div class="stat-n">Fast</div><div class="stat-l">Turnaround on all deliverables</div></div>
+    </div>
+    <p style="font-size:.82rem;color:var(--muted);margin-top:1.2rem">Currently accepting new clients. Limited availability.</p>
+  </div>
+</div></div>
 
-<!-- PROCESS -->
 <div id="process" class="section">
   <div class="eyebrow">The process</div>
-  <h2 class="section-h">Consulting + execution,<br>not one or the other</h2>
-  <p class="section-p">No mystery, no fluff. Here's exactly what working together looks like.</p>
+  <h2 class="section-h">Consulting and execution,<br>not one or the other</h2>
+  <p class="section-p">No mystery, no fluff. Here is exactly what working together looks like.</p>
   <div class="steps">
-    <div class="step">
-      <div class="step-n">01</div>
-      <div class="step-t">Audit &amp; Discovery</div>
-      <div class="step-d">I dig into your current search presence, competitors, and keyword gaps to understand where you are and where the opportunities are.</div>
-    </div>
-    <div class="step">
-      <div class="step-n">02</div>
-      <div class="step-t">Strategy &amp; Roadmap</div>
-      <div class="step-d">A clear prioritized plan, not a 60-page PDF that collects dust. You'll know what's being done, why, and what to expect.</div>
-    </div>
-    <div class="step">
-      <div class="step-n">03</div>
-      <div class="step-t">Execution &amp; Delivery</div>
-      <div class="step-d">I do the work. Optimizations, research, content strategy, GBP management, delivered on time in formats you can actually use.</div>
-    </div>
-    <div class="step">
-      <div class="step-n">04</div>
-      <div class="step-t">Report &amp; Refine</div>
-      <div class="step-d">Regular reporting in plain English. We review what's working, adjust what isn't, and keep building on the momentum.</div>
-    </div>
+    <div class="step"><div class="step-n">01</div><div class="step-t">Audit and Discovery</div><div class="step-d">I dig into your current search presence, competitors, and keyword gaps to understand where you are and where the opportunities are.</div></div>
+    <div class="step"><div class="step-n">02</div><div class="step-t">Strategy and Roadmap</div><div class="step-d">A clear prioritized plan, not a 60-page PDF that collects dust. You will know what is being done, why, and what to expect.</div></div>
+    <div class="step"><div class="step-n">03</div><div class="step-t">Execution and Delivery</div><div class="step-d">I do the work. Optimizations, research, content strategy, GBP management, delivered on time in formats you can actually use.</div></div>
+    <div class="step"><div class="step-n">04</div><div class="step-t">Report and Refine</div><div class="step-d">Regular reporting in plain English. We review what is working, adjust what is not, and keep building on the momentum.</div></div>
   </div>
 </div>
 
-<!-- WHY -->
 <div class="section">
   <div class="eyebrow">Why work with me</div>
   <h2 class="section-h">The best of both worlds.<br>And you keep all of it.</h2>
   <div class="why-grid">
-    <div class="why">
-      <div class="why-t">You work with me directly</div>
-      <div class="why-d">No account managers, no handoffs. I handle strategy and execution, so nothing gets lost in translation.</div>
-    </div>
-    <div class="why">
-      <div class="why-t">Built for your goals</div>
-      <div class="why-d">No off-the-shelf packages. Scope is shaped around what you actually need: local SEO, content, or agency support.</div>
-    </div>
-    <div class="why">
-      <div class="why-t">Agency-tested experience</div>
-      <div class="why-d">I've worked in agency environments. I know how to hit deadlines, communicate clearly, and produce work that holds up under client scrutiny.</div>
-    </div>
-    <div class="why">
-      <div class="why-t">Honest about what I do well</div>
-      <div class="why-d">Technical SEO is part of the picture. I flag issues and help coordinate fixes. My real strength is strategy, content, and local SEO that compounds.</div>
-    </div>
-    <div class="why">
-      <div class="why-t">No long-term lock-in</div>
-      <div class="why-d">Month-to-month flexibility. I earn your continued business by producing results, not by burying exit clauses in a contract.</div>
-    </div>
-    <div class="why">
-      <div class="why-t">Clear communication</div>
-      <div class="why-d">Reporting you can actually understand, updates that don't require a decoder ring, and a point of contact who responds.</div>
-    </div>
+    <div class="why"><div class="why-t">You work with me directly</div><div class="why-d">No account managers, no handoffs. I handle strategy and execution, so nothing gets lost in translation.</div></div>
+    <div class="why"><div class="why-t">Built for your goals</div><div class="why-d">No off-the-shelf packages. Scope is shaped around what you actually need: local SEO, content, or agency support.</div></div>
+    <div class="why"><div class="why-t">Agency-tested experience</div><div class="why-d">I have worked in agency environments. I know how to hit deadlines, communicate clearly, and produce work that holds up under client scrutiny.</div></div>
+    <div class="why"><div class="why-t">Honest about what I do well</div><div class="why-d">Technical SEO is part of the picture. I flag issues and help coordinate fixes. My real strength is strategy, content, and local SEO that compounds.</div></div>
+    <div class="why"><div class="why-t">No long-term lock-in</div><div class="why-d">Month-to-month flexibility. I earn your continued business by producing results, not by burying exit clauses in a contract.</div></div>
+    <div class="why"><div class="why-t">Clear communication</div><div class="why-d">Reporting you can actually understand, updates that do not require a decoder ring, and a point of contact who responds.</div></div>
   </div>
 </div>
 
-
-<!-- GUIDES -->
 <div id="guides" class="section">
   <div class="eyebrow">Free resources</div>
   <h2 class="section-h">SEO Guides</h2>
   <p class="section-p">Practical, step-by-step guides on how to do SEO properly. No filler, no recycled advice. Written from real consulting experience.</p>
   <div class="guides-list">
-    <a onclick="showPage('guides-keyword-research');return false;" href="javascript:void(0)" class="guide-row">
-      <div class="guide-num">01</div>
-      <div class="guide-body">
-        <div class="guide-title">How to do keyword research for a small business</div>
-        <div class="guide-desc">A practical framework for finding keywords your business should target, organizing them into clusters, and prioritizing by intent and opportunity.</div>
-      </div>
-      <div class="guide-meta">~10 min read</div>
-    </a>
-    <a onclick="showPage('guides-google-business-profile');return false;" href="javascript:void(0)" class="guide-row">
-      <div class="guide-num">02</div>
-      <div class="guide-body">
-        <div class="guide-title">How to optimize your Google Business Profile</div>
-        <div class="guide-desc">Everything that actually moves the needle on GBP: categories, photos, review strategy, posts, and what most businesses get wrong.</div>
-      </div>
-      <div class="guide-meta">~8 min read</div>
-    </a>
-    <a onclick="showPage('guides-title-tags');return false;" href="javascript:void(0)" class="guide-row">
-      <div class="guide-num">03</div>
-      <div class="guide-body">
-        <div class="guide-title">How to write a title tag that ranks and gets clicked</div>
-        <div class="guide-desc">What Google actually looks for in a title tag, how to write for both search intent and click-through rate, and the mistakes most sites make.</div>
-      </div>
-      <div class="guide-meta">~6 min read</div>
-    </a>
-    <a onclick="showPage('guides-content-strategy');return false;" href="javascript:void(0)" class="guide-row">
-      <div class="guide-num">04</div>
-      <div class="guide-body">
-        <div class="guide-title">How to create a content strategy that builds over time</div>
-        <div class="guide-desc">Topic clusters, pillar pages, editorial calendars, and gap analysis. How to build content that compounds instead of just filling a blog.</div>
-      </div>
-      <div class="guide-meta">~12 min read</div>
-    </a>
-    <div class="guide-row guide-coming">
-      <div class="guide-num">05</div>
-      <div class="guide-body">
-        <div class="guide-title">How to read an SEO report and know what matters</div>
-        <div class="guide-desc">What metrics actually connect to business outcomes, and how to tell the difference between vanity numbers and signals worth acting on.</div>
-      </div>
-      <div class="guide-meta guide-soon">Coming soon</div>
-    </div>
+    <div class="guide-row" onclick="showPage('g1')"><div class="guide-num">01</div><div class="guide-body"><div class="guide-title">How to do keyword research for a small business</div><div class="guide-desc">A practical framework for finding keywords your business should target, organizing them into clusters, and prioritizing by intent and opportunity.</div></div><div class="guide-meta">~10 min read</div></div>
+    <div class="guide-row" onclick="showPage('g2')"><div class="guide-num">02</div><div class="guide-body"><div class="guide-title">How to optimize your Google Business Profile</div><div class="guide-desc">Everything that actually moves the needle on GBP: categories, photos, review strategy, posts, and what most businesses get wrong.</div></div><div class="guide-meta">~8 min read</div></div>
+    <div class="guide-row" onclick="showPage('g3')"><div class="guide-num">03</div><div class="guide-body"><div class="guide-title">How to write a title tag that ranks and gets clicked</div><div class="guide-desc">What Google actually looks for in a title tag, how to write for both search intent and click-through rate, and the mistakes most sites make.</div></div><div class="guide-meta">~6 min read</div></div>
+    <div class="guide-row" onclick="showPage('g4')"><div class="guide-num">04</div><div class="guide-body"><div class="guide-title">How to create a content strategy that builds over time</div><div class="guide-desc">Topic clusters, pillar pages, editorial calendars, and gap analysis. How to build content that compounds instead of just filling a blog.</div></div><div class="guide-meta">~12 min read</div></div>
+    <div class="guide-row guide-coming"><div class="guide-num">05</div><div class="guide-body"><div class="guide-title">How to read an SEO report and know what matters</div><div class="guide-desc">What metrics actually connect to business outcomes, and how to tell the difference between vanity numbers and signals worth acting on.</div></div><div class="guide-meta guide-soon">Coming soon</div></div>
   </div>
 </div>
 
-<!-- BLOG -->
 <div id="blog" class="section">
   <div class="eyebrow">From the blog</div>
   <h2 class="section-h">SEO insights and takes</h2>
-  <p class="section-p">Practitioner-grounded writing on SEO, local search, content, and what's actually changing in organic search right now.</p>
+  <p class="section-p">Practitioner-grounded writing on SEO, local search, content, and what is actually changing in organic search right now.</p>
   <div class="blog-grid">
-    <a onclick="showPage('blog-gbp-not-driving-calls');return false;" href="javascript:void(0)" class="blog-card">
-      <div class="blog-tags"><span class="blog-tag">Local SEO</span></div>
-      <div class="blog-title">Why your Google Business Profile isn't driving calls (and how to fix it)</div>
-      <div class="blog-desc">Most GBP underperformance comes down to a handful of fixable mistakes. Here's what to audit first and what changes actually move the needle.</div>
-      <div class="blog-foot">
-        <span class="blog-author">Maddie Conroy</span>
-        <span class="blog-dot">·</span>
-        <span class="blog-date">May 2026</span>
-        <span class="blog-dot">·</span>
-        <span>~7 min read</span>
-      </div>
-    </a>
-    <a onclick="showPage('blog-content-that-ranks');return false;" href="javascript:void(0)" class="blog-card">
-      <div class="blog-tags"><span class="blog-tag">Content Strategy</span></div>
-      <div class="blog-title">The difference between content that ranks and content that just exists</div>
-      <div class="blog-desc">Publishing isn't a strategy. Here's how to think about intent, structure, and distribution so every piece of content has an actual job to do.</div>
-      <div class="blog-foot">
-        <span class="blog-author">Maddie Conroy</span>
-        <span class="blog-dot">·</span>
-        <span class="blog-date">May 2026</span>
-        <span class="blog-dot">·</span>
-        <span>~9 min read</span>
-      </div>
-    </a>
-    <a onclick="showPage('blog-on-page-seo-2026');return false;" href="javascript:void(0)" class="blog-card">
-      <div class="blog-tags"><span class="blog-tag">On-Page SEO</span></div>
-      <div class="blog-title">On-page SEO in 2026: what still matters and what you can stop worrying about</div>
-      <div class="blog-desc">A grounded look at which on-page factors are worth your time, which are overhyped, and where most sites are leaving easy wins on the table.</div>
-      <div class="blog-foot">
-        <span class="blog-author">Maddie Conroy</span>
-        <span class="blog-dot">·</span>
-        <span class="blog-date">April 2026</span>
-        <span class="blog-dot">·</span>
-        <span>~11 min read</span>
-      </div>
-    </a>
+    <div class="blog-card" onclick="showPage('b1')"><div class="blog-tags"><span class="blog-tag">Local SEO</span></div><div class="blog-title">Why your Google Business Profile is not driving calls (and how to fix it)</div><div class="blog-desc">Most GBP underperformance comes down to a handful of fixable mistakes. Here is what to audit first and what changes actually move the needle.</div><div class="blog-foot"><span class="blog-author">Maddie Conroy</span><span class="blog-dot">·</span><span>May 2026</span><span class="blog-dot">·</span><span>~7 min read</span></div></div>
+    <div class="blog-card" onclick="showPage('b2')"><div class="blog-tags"><span class="blog-tag">Content Strategy</span></div><div class="blog-title">The difference between content that ranks and content that just exists</div><div class="blog-desc">Publishing is not a strategy. Here is how to think about intent, structure, and distribution so every piece of content has an actual job to do.</div><div class="blog-foot"><span class="blog-author">Maddie Conroy</span><span class="blog-dot">·</span><span>May 2026</span><span class="blog-dot">·</span><span>~9 min read</span></div></div>
+    <div class="blog-card" onclick="showPage('b3')"><div class="blog-tags"><span class="blog-tag">On-Page SEO</span></div><div class="blog-title">On-page SEO in 2026: what still matters and what you can stop worrying about</div><div class="blog-desc">A grounded look at which on-page factors are worth your time, which are overhyped, and where most sites are leaving easy wins on the table.</div><div class="blog-foot"><span class="blog-author">Maddie Conroy</span><span class="blog-dot">·</span><span>April 2026</span><span class="blog-dot">·</span><span>~11 min read</span></div></div>
   </div>
 </div>
 
-<!-- CTA -->
-<div id="contact" class="cta-outer">
-  <div class="cta-box">
-    <div class="cta-eyebrow">Now accepting clients</div>
-    <h2>Ready to grow your organic traffic?</h2>
-    <p>Whether you need on-page work, local SEO, content strategy, or an agency SEO partner. Let's talk about what you're building.</p>
-    <div class="cta-btns">
-      <a href="mailto:maddie.conroy@workwithmaddie.com" class="btn-p">Start a conversation</a>
-      <a href="#services" class="btn-o">View services</a>
-    </div>
+<div id="contact" class="cta-outer"><div class="cta-box">
+  <div class="cta-eyebrow">Now accepting clients</div>
+  <h2>Ready to grow your organic traffic?</h2>
+  <p>Whether you need on-page work, local SEO, content strategy, or an agency SEO partner. Let us talk about what you are building.</p>
+  <div class="cta-btns">
+    <a href="mailto:maddie.conroy@workwithmaddie.com" class="btn-p">Start a conversation</a>
+    <button class="btn-o" onclick="scrollTo('services')">View services</button>
   </div>
-</div>
+</div></div>
 
-<!-- FOOTER -->
 <footer>
-  <div style="font-family:&#39;Fraunces&#39;,serif;font-weight:700;font-size:1rem;color:var(--cream)">Maddie<span style="color:var(--accent)">.</span></div>
+  <div style="font-family:'Fraunces',serif;font-weight:700;font-size:1rem;color:var(--cream)">Maddie Conroy <span style="color:var(--accent)">SEO</span></div>
   <div class="foot-links">
-    <a href="#services">Services</a>
-    <a href="#about">About</a>
-    <a href="#process">Process</a>
-    <a href="#guides">Guides</a>
-    <a href="#blog">Blog</a>
-    <a href="#contact">Contact</a>
+    <span onclick="scrollTo('services')">Services</span>
+    <span onclick="scrollTo('about')">About</span>
+    <span onclick="scrollTo('process')">Process</span>
+    <span onclick="scrollTo('guides')">Guides</span>
+    <span onclick="scrollTo('blog')">Blog</span>
+    <span onclick="scrollTo('contact')">Contact</span>
   </div>
-  <div>© 2026 workwithmaddie.com</div>
+  <div>2026 workwithmaddie.com</div>
 </footer>
 
 
-<!-- ARTICLE PAGES -->
-<div id="guides-keyword-research" class="page-overlay">
+<div id="g1" class="page-overlay">
 <div class="back-bar"><button onclick="hidePage()"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg> Back to home</button></div>
-<nav>
-  <a href="#" onclick="hidePage();return false;" class="logo">Maddie Conroy <span>SEO</span></a>
-  <div class="nav-links">
-    <a href="#">Home</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('services');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Services</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('guides');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Guides</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('blog');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Blog</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('contact');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Contact</a>
-  </div>
-  <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('contact');if(el)el.scrollIntoView({behavior:'smooth'});},80)" class="nav-btn">Work with me</a>
-</nav>
-
 <div class="article-hero">
-  <div class="article-eyebrow">
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('guides');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Guides</a>
-    <span class="sep">›</span> SEO How-To Series
-  </div>
+  <div class="article-eyebrow"><span onclick="hidePage();setTimeout(function(){document.getElementById('guides').scrollIntoView({behavior:'smooth'});},80)">Guides</span><span class="sep">&#8250;</span> SEO</div>
   <h1 class="article-title">How to do keyword research for a small business</h1>
-  <p style="font-size:1.05rem;color:var(--cream-dim);margin-top:.8rem;margin-bottom:0">
-    A practical framework for finding keywords your business should target, organizing them into clusters, and prioritizing by intent and opportunity.
-  </p>
-  <div class="article-meta">
-    <span class="meta-tag">Keyword Research</span>
-    <span class="meta-dot">·</span>
-    <span>Maddie Conroy</span>
-    <span class="meta-dot">·</span>
-    <span>May 2026</span>
-    <span class="meta-dot">·</span>
-    <span>~10 min read</span>
-  </div>
+  <p style="font-size:1.05rem;color:var(--cream-dim);margin-top:.8rem;margin-bottom:0">A practical framework for finding keywords your business should target, organizing them into clusters, and prioritizing by intent and opportunity.</p>
+  <div class="article-meta"><span class="meta-tag">Keyword Research</span><span class="meta-dot">·</span><span>Maddie Conroy</span><span class="meta-dot">·</span><span>May 2026</span><span class="meta-dot">·</span><span>~10 min read</span></div>
 </div>
-<div class="article-body">
-  <p>Keyword research is the foundation of any SEO strategy. Done well, it tells you exactly what your potential customers are searching for and gives you a roadmap for the content and pages you need to build. Done poorly, it produces a spreadsheet full of numbers that never translates into actual traffic.</p>
-  <p>This guide walks through a practical, repeatable process for small business keyword research. You do not need expensive tools to get started, though a few free ones will help.</p>
-
-  <h2>Start with what your customers actually say</h2>
-  <p>Before opening any keyword tool, write down every way a customer might describe your business, your services, and the problems you solve. Be literal. If you run a plumbing company in Tampa, customers are not searching for "residential hydro-mechanical solutions." They are searching for "plumber near me" or "water heater replacement Tampa."</p>
-  <p>Pull from real sources:</p>
-  <ul>
-    <li>Questions customers ask you on calls or in emails</li>
-    <li>Reviews on your Google Business Profile or Yelp</li>
-    <li>The exact language in your intake forms</li>
-    <li>What competitors call their services</li>
-  </ul>
-  <p>This seed list is the raw material everything else builds on.</p>
-
-  <h2>Understand search intent before anything else</h2>
-  <p>Every search query has an intent behind it. Before you target a keyword, you need to know what the person searching actually wants. There are four main types:</p>
-  <ul>
-    <li><strong>Informational:</strong> They want to learn something. ("how to unclog a drain")</li>
-    <li><strong>Navigational:</strong> They want to find a specific site or brand. ("Roto-Rooter Tampa")</li>
-    <li><strong>Commercial:</strong> They are researching before a purchase. ("best plumber Tampa reviews")</li>
-    <li><strong>Transactional:</strong> They are ready to act right now. ("emergency plumber Tampa")</li>
-  </ul>
-  <p>For most small businesses, commercial and transactional keywords are the priority. They convert. Informational keywords build authority over time and can attract people earlier in the decision process.</p>
-  <div class="callout"><p>Quick test: Google the keyword yourself. Look at what already ranks. If the results are all blog posts, Google thinks the intent is informational. If they are all service pages or local pack results, it is commercial or transactional. Match your content to what is already winning.</p></div>
-
-  <h2>Use free tools to find real data</h2>
-  <p>You do not need a paid SEO tool to do solid keyword research. These free options cover the basics:</p>
-  <ul>
-    <li><strong>Google Search Console:</strong> If your site has been live, this shows you what queries are already sending traffic. Start here.</li>
-    <li><strong>Google Autocomplete:</strong> Type your seed keywords into Google and note the suggestions. These are real searches people are making.</li>
-    <li><strong>People Also Ask:</strong> The "People also ask" box on Google results pages shows related questions. These are excellent for informational content.</li>
-    <li><strong>Google Keyword Planner:</strong> Free with a Google Ads account. Gives you search volume ranges and related keywords.</li>
-    <li><strong>Ubersuggest free tier:</strong> Limited daily searches but useful for quick competitive snapshots.</li>
-  </ul>
-
-  <h2>Evaluate keywords on three factors</h2>
-  <p>When you have a list of potential keywords, evaluate each one on:</p>
-  <ul>
-    <li><strong>Search volume:</strong> How many people search this per month? Higher is not always better. A keyword with 50 monthly searches that perfectly matches your service beats a 5,000-volume keyword where you cannot compete.</li>
-    <li><strong>Competition:</strong> How hard will it be to rank? Look at what is currently on page one. If it is all national brands or major publications, that is a tough fight for a small business.</li>
-    <li><strong>Relevance:</strong> Will someone searching this actually become a customer? A plumber ranking for "what causes pipes to freeze" gets readers. A plumber ranking for "frozen pipe repair Tampa" gets calls.</li>
-  </ul>
-
-  <h2>Group keywords into clusters</h2>
-  <p>Do not target one keyword per page in isolation. Group related keywords together into clusters. Each cluster becomes one piece of content or one page on your site.</p>
-  <p>For example, a local accountant might have a cluster around "small business tax preparation Tampa" that also includes: "tax prep for LLCs," "self-employed tax help Tampa," and "quarterly estimated taxes small business." One solid service page can target all of these at once.</p>
-  <p>Clusters also help you see gaps. If you have a cluster of ten keywords about a topic and no page addressing it, that is a content opportunity.</p>
-
-  <h2>Prioritize what to work on first</h2>
-  <p>Once you have your clusters, prioritize by:</p>
-  <ol>
-    <li><strong>Highest commercial intent + reasonable competition:</strong> These bring revenue fastest.</li>
-    <li><strong>Keywords you already almost rank for:</strong> Check Google Search Console for queries where you appear on page two or three. A targeted optimization push can move these to page one quickly.</li>
-    <li><strong>Local modifiers:</strong> Adding your city or neighborhood to keywords often drops competition dramatically while keeping intent high.</li>
-  </ol>
-
-  <h2>Revisit your keyword research regularly</h2>
-  <p>Keyword research is not a one-time task. Search behavior shifts. New competitors enter the market. Seasonality affects volume. Build in a review every six months at minimum and check your Search Console data monthly for new opportunities.</p>
-  <div class="callout"><p>The goal is not to have a perfect keyword spreadsheet. The goal is to understand what your customers are looking for so you can build content and pages that answer it better than anyone else does.</p></div>
-
-  <div class="article-cta">
-    <h3>Want this done for you?</h3>
-    <p>Keyword research is one of the core services I offer. I will map your opportunity landscape, build your cluster framework, and hand you a prioritized roadmap you can act on.</p>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('contact');if(el)el.scrollIntoView({behavior:'smooth'});},80)" class="btn-p">Get in touch</a>
-  </div>
+<div class="article-body"><p>Keyword research is the foundation of any SEO strategy. Done well, it tells you exactly what your potential customers are searching for and gives you a roadmap for the content and pages you need to build. Done poorly, it produces a spreadsheet full of numbers that never translates into actual traffic.</p>
+<h2>Start with what your customers actually say</h2>
+<p>Before opening any keyword tool, write down every way a customer might describe your business, your services, and the problems you solve. Be literal. If you run a plumbing company in Tampa, customers are not searching for "residential hydro-mechanical solutions." They are searching for "plumber near me" or "water heater replacement Tampa."</p>
+<ul><li>Questions customers ask you on calls or in emails</li><li>Reviews on your Google Business Profile or Yelp</li><li>The exact language in your intake forms</li><li>What competitors call their services</li></ul>
+<h2>Understand search intent before anything else</h2>
+<p>Every search query has an intent behind it. Before you target a keyword, you need to know what the person searching actually wants.</p>
+<ul><li><strong>Informational:</strong> They want to learn something.</li><li><strong>Navigational:</strong> They want to find a specific site or brand.</li><li><strong>Commercial:</strong> They are researching before a purchase.</li><li><strong>Transactional:</strong> They are ready to act right now.</li></ul>
+<p>For most small businesses, commercial and transactional keywords are the priority. They convert.</p>
+<div class="callout"><p>Quick test: Google the keyword yourself. Look at what already ranks. If the results are all blog posts, Google thinks the intent is informational. If they are all service pages or local pack results, it is commercial or transactional. Match your content to what is already winning.</p></div>
+<h2>Use free tools to find real data</h2>
+<ul><li><strong>Google Search Console:</strong> Shows you what queries are already sending traffic. Start here.</li><li><strong>Google Autocomplete:</strong> Type your seed keywords into Google and note the suggestions.</li><li><strong>People Also Ask:</strong> Shows related questions people are actually asking.</li><li><strong>Google Keyword Planner:</strong> Free with a Google Ads account.</li><li><strong>Ubersuggest free tier:</strong> Limited daily searches but useful for quick snapshots.</li></ul>
+<h2>Evaluate keywords on three factors</h2>
+<ul><li><strong>Search volume:</strong> How many people search this per month?</li><li><strong>Competition:</strong> How hard will it be to rank?</li><li><strong>Relevance:</strong> Will someone searching this actually become a customer?</li></ul>
+<h2>Group keywords into clusters</h2>
+<p>Do not target one keyword per page in isolation. Group related keywords together into clusters. Each cluster becomes one piece of content or one page on your site. Clusters also help you see gaps. If you have a cluster of keywords about a topic and no page addressing it, that is a content opportunity.</p>
+<h2>Prioritize what to work on first</h2>
+<ol><li><strong>Highest commercial intent and reasonable competition:</strong> These bring revenue fastest.</li><li><strong>Keywords you already almost rank for:</strong> Check Search Console for queries where you appear on page two or three.</li><li><strong>Local modifiers:</strong> Adding your city or neighborhood to keywords often drops competition dramatically.</li></ol>
+<div class="callout"><p>The goal is not to have a perfect keyword spreadsheet. The goal is to understand what your customers are looking for so you can build content and pages that answer it better than anyone else does.</p></div>
+<div class="article-cta"><h3>Want this done for you?</h3><p>Keyword research is one of the core services I offer. I will map your opportunity landscape, build your cluster framework, and hand you a prioritized roadmap you can act on.</p><button class="btn-p" onclick="hidePage();setTimeout(function(){document.getElementById('contact').scrollIntoView({behavior:'smooth'})},80)">Get in touch</button></div></div>
 </div>
 
-<footer>
-  <div style="font-family:&#39;Fraunces&#39;,serif;font-weight:700;font-size:1rem;color:var(--cream)">Maddie Conroy <span style="color:var(--accent)">SEO</span></div>
-  <div class="foot-links">
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('services');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Services</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('guides');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Guides</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('blog');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Blog</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('contact');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Contact</a>
-  </div>
-  <div>© 2026 workwithmaddie.com</div>
-</footer>
-</div>
-<div id="guides-google-business-profile" class="page-overlay">
+<div id="g2" class="page-overlay">
 <div class="back-bar"><button onclick="hidePage()"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg> Back to home</button></div>
-<nav>
-  <a href="#" onclick="hidePage();return false;" class="logo">Maddie Conroy <span>SEO</span></a>
-  <div class="nav-links">
-    <a href="#">Home</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('services');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Services</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('guides');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Guides</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('blog');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Blog</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('contact');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Contact</a>
-  </div>
-  <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('contact');if(el)el.scrollIntoView({behavior:'smooth'});},80)" class="nav-btn">Work with me</a>
-</nav>
-
 <div class="article-hero">
-  <div class="article-eyebrow">
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('guides');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Guides</a>
-    <span class="sep">›</span> SEO How-To Series
-  </div>
+  <div class="article-eyebrow"><span onclick="hidePage();setTimeout(function(){document.getElementById('guides').scrollIntoView({behavior:'smooth'});},80)">Guides</span><span class="sep">&#8250;</span> SEO</div>
   <h1 class="article-title">How to optimize your Google Business Profile</h1>
-  <p style="font-size:1.05rem;color:var(--cream-dim);margin-top:.8rem;margin-bottom:0">
-    Everything that actually moves the needle on GBP: categories, photos, review strategy, posts, and what most businesses consistently get wrong.
-  </p>
-  <div class="article-meta">
-    <span class="meta-tag">Local SEO</span>
-    <span class="meta-dot">·</span>
-    <span>Maddie Conroy</span>
-    <span class="meta-dot">·</span>
-    <span>May 2026</span>
-    <span class="meta-dot">·</span>
-    <span>~8 min read</span>
-  </div>
+  <p style="font-size:1.05rem;color:var(--cream-dim);margin-top:.8rem;margin-bottom:0">Everything that actually moves the needle on GBP: categories, photos, review strategy, posts, and what most businesses consistently get wrong.</p>
+  <div class="article-meta"><span class="meta-tag">Local SEO</span><span class="meta-dot">·</span><span>Maddie Conroy</span><span class="meta-dot">·</span><span>May 2026</span><span class="meta-dot">·</span><span>~8 min read</span></div>
 </div>
-<div class="article-body">
-  <p>Your Google Business Profile (GBP) is often the first thing a potential customer sees when they search for a local business. It controls whether you appear in the map pack, what information shows when someone searches your name, and how you look next to competitors.</p>
-  <p>Most businesses set up their GBP once and never touch it again. That is a mistake. An actively managed, fully optimized profile consistently outperforms a neglected one, even when the neglected one has been around longer.</p>
-
-  <h2>Claim and verify your profile first</h2>
-  <p>Before any optimization matters, you need to own your listing. Go to business.google.com and search for your business. If it exists but is unclaimed, claim it. If it does not exist, create it. Google will send a verification postcard, call, or email depending on your business type.</p>
-  <p>Do not skip verification. An unverified profile cannot be fully edited and will not rank as well.</p>
-
-  <h2>Choose your primary category carefully</h2>
-  <p>Your primary category is one of the most important ranking factors in local search. It tells Google what type of business you are and determines which searches you are eligible to appear in.</p>
-  <p>Be specific. "Plumber" beats "Contractor." "Italian Restaurant" beats "Restaurant." Search Google for your main service and look at what category top-ranking competitors use. That is your benchmark.</p>
-  <p>You can also add secondary categories. Use them for legitimate additional services you offer, but do not stuff them. Google is getting better at detecting keyword stuffing in categories.</p>
-
-  <h2>Fill out every single field</h2>
-  <p>Completeness signals legitimacy. Work through every available field:</p>
-  <ul>
-    <li><strong>Business name:</strong> Use your actual legal or trading name. Do not add keywords. Google suppresses profiles that stuff keywords into business names.</li>
-    <li><strong>Address:</strong> Match it exactly to how it appears on your website and any directory listings.</li>
-    <li><strong>Phone number:</strong> Use a local number, not a toll-free line, for local SEO.</li>
-    <li><strong>Website:</strong> Link to your homepage or, for multi-location businesses, the specific location page.</li>
-    <li><strong>Hours:</strong> Keep these accurate and update them for holidays. Wrong hours are one of the fastest ways to lose a customer and get a bad review.</li>
-    <li><strong>Business description:</strong> 750 characters. Write naturally. Mention your main services, your location, and what makes you different. Do not repeat your business name five times.</li>
-    <li><strong>Services and products:</strong> Add every service you offer with descriptions. These create additional keyword surface area.</li>
-    <li><strong>Attributes:</strong> Things like "women-owned," "wheelchair accessible," or "free parking." Fill out every applicable attribute.</li>
-  </ul>
-
-  <h2>Photos matter more than most businesses think</h2>
-  <p>Profiles with photos receive significantly more direction requests and website clicks than those without. Google's own data backs this up.</p>
-  <ul>
-    <li>Upload a high-quality cover photo and logo</li>
-    <li>Add photos of your interior, exterior, team, and work</li>
-    <li>For service businesses: before-and-after photos perform well</li>
-    <li>Add new photos regularly. Consistent activity signals an active, legitimate business</li>
-    <li>Use real photos, not stock images. Google can detect stock photos and customers notice</li>
-  </ul>
-  <div class="callout"><p>Name your photo files before uploading them. "tampa-plumber-water-heater-install.jpg" is better than "IMG_4823.jpg." It is a small signal but it costs nothing.</p></div>
-
-  <h2>Reviews: how to get them and what to do with them</h2>
-  <p>Reviews are one of the strongest local ranking factors. More reviews, higher ratings, and recent reviews all help. But the way most businesses approach review generation is either too passive or too aggressive.</p>
-  <p><strong>Getting reviews:</strong></p>
-  <ul>
-    <li>Ask in person, right after a positive interaction. The moment you solve someone's problem is when they are most willing to leave a review.</li>
-    <li>Send a follow-up text or email with a direct link to your GBP review form. Google provides a short URL in your profile dashboard.</li>
-    <li>Add a "Leave us a review" link to your email signature and receipts.</li>
-    <li>Never offer incentives for reviews. This violates Google's policies and can get your profile suspended.</li>
-  </ul>
-  <p><strong>Responding to reviews:</strong></p>
-  <ul>
-    <li>Respond to every review, positive and negative. This shows you are active and that you care.</li>
-    <li>For positive reviews: thank them and mention a specific detail if you can. Keep it short.</li>
-    <li>For negative reviews: respond calmly, acknowledge the issue, and offer to resolve it offline. Never argue in the public reply.</li>
-  </ul>
-
-  <h2>Use Google Posts consistently</h2>
-  <p>Google Posts appear directly on your profile in search results. Most businesses never use them. That is a missed opportunity.</p>
-  <p>Post about: promotions or seasonal offers, new services, events, or recent work. Posts expire after seven days for standard posts, so aim for at least one post per week. Each post should have a clear call to action.</p>
-
-  <h2>Use the Q&amp;A section proactively</h2>
-  <p>Anyone can ask a question on your GBP, and anyone can answer it, including random strangers. Seed your own Q&amp;A section by asking common customer questions yourself (from a separate account) and answering them as the business owner. This gives you control over the information and adds keyword-rich content to your profile.</p>
-
-  <h2>Monitor your profile for edits</h2>
-  <p>Google allows anyone to suggest edits to your business information. Third parties can change your hours, address, or even your business name, and Google sometimes accepts these suggestions automatically. Check your profile at least monthly and turn on notifications in your GBP dashboard so you are alerted to any changes.</p>
-
-  <div class="article-cta">
-    <h3>Want your GBP fully managed?</h3>
-    <p>Local SEO and Google Business Profile management is one of my core services. I handle setup, optimization, ongoing posting, review strategy, and monthly reporting.</p>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('contact');if(el)el.scrollIntoView({behavior:'smooth'});},80)" class="btn-p">Get in touch</a>
-  </div>
+<div class="article-body"><p>Your Google Business Profile is often the first thing a potential customer sees when they search for a local business. Most businesses set up their GBP once and never touch it again. That is a mistake.</p>
+<h2>Claim and verify your profile first</h2>
+<p>Before any optimization matters, you need to own your listing. Go to business.google.com and search for your business. If it exists but is unclaimed, claim it. Google will send a verification postcard, call, or email depending on your business type. Do not skip verification. An unverified profile cannot be fully edited and will not rank as well.</p>
+<h2>Choose your primary category carefully</h2>
+<p>Your primary category is one of the most important ranking factors in local search. Be specific. "Plumber" beats "Contractor." Search Google for your main service and look at what category top-ranking competitors use. That is your benchmark.</p>
+<h2>Fill out every single field</h2>
+<ul><li><strong>Business name:</strong> Use your actual legal or trading name. Do not add keywords.</li><li><strong>Address:</strong> Match it exactly to how it appears on your website and any directory listings.</li><li><strong>Phone number:</strong> Use a local number, not a toll-free line.</li><li><strong>Hours:</strong> Keep these accurate and update them for holidays.</li><li><strong>Business description:</strong> 750 characters. Write naturally. Mention your main services, your location, and what makes you different.</li><li><strong>Services and products:</strong> Add every service you offer with descriptions.</li></ul>
+<h2>Photos matter more than most businesses think</h2>
+<ul><li>Upload a high-quality cover photo and logo</li><li>Add photos of your interior, exterior, team, and work</li><li>For service businesses: before-and-after photos perform well</li><li>Add new photos regularly. Consistent activity signals an active, legitimate business</li><li>Use real photos, not stock images</li></ul>
+<div class="callout"><p>Name your photo files before uploading them. "tampa-plumber-water-heater-install.jpg" is better than "IMG_4823.jpg." It is a small signal but it costs nothing.</p></div>
+<h2>Reviews: how to get them and what to do with them</h2>
+<ul><li>Ask in person, right after a positive interaction</li><li>Send a follow-up text or email with a direct link to your GBP review form</li><li>Respond to every review, positive and negative</li><li>Never offer incentives for reviews. This violates Google policies</li></ul>
+<h2>Use Google Posts consistently</h2>
+<p>Google Posts appear directly on your profile in search results. Most businesses never use them. Post about promotions, new services, events, or recent work. Posts expire after seven days for standard posts, so aim for at least one post per week.</p>
+<h2>Monitor your profile for edits</h2>
+<p>Google allows anyone to suggest edits to your business information. Third parties can change your hours, address, or even your business name. Check your profile at least monthly and turn on notifications so you are alerted to any changes.</p>
+<div class="article-cta"><h3>Want your GBP fully managed?</h3><p>Local SEO and Google Business Profile management is one of my core services. I handle setup, optimization, ongoing posting, review strategy, and monthly reporting.</p><button class="btn-p" onclick="hidePage();setTimeout(function(){document.getElementById('contact').scrollIntoView({behavior:'smooth'})},80)">Get in touch</button></div></div>
 </div>
 
-<footer>
-  <div style="font-family:&#39;Fraunces&#39;,serif;font-weight:700;font-size:1rem;color:var(--cream)">Maddie Conroy <span style="color:var(--accent)">SEO</span></div>
-  <div class="foot-links">
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('services');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Services</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('guides');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Guides</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('blog');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Blog</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('contact');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Contact</a>
-  </div>
-  <div>© 2026 workwithmaddie.com</div>
-</footer>
-</div>
-<div id="guides-title-tags" class="page-overlay">
+<div id="g3" class="page-overlay">
 <div class="back-bar"><button onclick="hidePage()"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg> Back to home</button></div>
-<nav>
-  <a href="#" onclick="hidePage();return false;" class="logo">Maddie Conroy <span>SEO</span></a>
-  <div class="nav-links">
-    <a href="#">Home</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('services');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Services</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('guides');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Guides</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('blog');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Blog</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('contact');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Contact</a>
-  </div>
-  <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('contact');if(el)el.scrollIntoView({behavior:'smooth'});},80)" class="nav-btn">Work with me</a>
-</nav>
-
 <div class="article-hero">
-  <div class="article-eyebrow">
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('guides');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Guides</a>
-    <span class="sep">›</span> SEO How-To Series
-  </div>
+  <div class="article-eyebrow"><span onclick="hidePage();setTimeout(function(){document.getElementById('guides').scrollIntoView({behavior:'smooth'});},80)">Guides</span><span class="sep">&#8250;</span> SEO</div>
   <h1 class="article-title">How to write a title tag that ranks and gets clicked</h1>
-  <p style="font-size:1.05rem;color:var(--cream-dim);margin-top:.8rem;margin-bottom:0">
-    What Google actually looks for in a title tag, how to write for both search intent and click-through rate, and the mistakes most sites make.
-  </p>
-  <div class="article-meta">
-    <span class="meta-tag">On-Page SEO</span>
-    <span class="meta-dot">·</span>
-    <span>Maddie Conroy</span>
-    <span class="meta-dot">·</span>
-    <span>May 2026</span>
-    <span class="meta-dot">·</span>
-    <span>~6 min read</span>
-  </div>
+  <p style="font-size:1.05rem;color:var(--cream-dim);margin-top:.8rem;margin-bottom:0">What Google actually looks for in a title tag, how to write for both search intent and click-through rate, and the mistakes most sites make.</p>
+  <div class="article-meta"><span class="meta-tag">On-Page SEO</span><span class="meta-dot">·</span><span>Maddie Conroy</span><span class="meta-dot">·</span><span>May 2026</span><span class="meta-dot">·</span><span>~6 min read</span></div>
 </div>
-<div class="article-body">
-  <p>The title tag is the single most important on-page SEO element. It is what Google displays as the clickable headline in search results, and it is one of the clearest signals you can send about what a page is about. Getting it right takes about ten minutes per page. Getting it wrong costs you rankings and clicks.</p>
-
-  <h2>What a title tag actually does</h2>
-  <p>A title tag serves two audiences simultaneously: search engines and humans. For Google, it is a relevance signal. For the person scanning search results, it is an ad headline. Your job is to satisfy both at once.</p>
-  <p>A strong title tag:</p>
-  <ul>
-    <li>Includes the primary keyword for the page</li>
-    <li>Accurately describes the page content</li>
-    <li>Compels the right person to click</li>
-    <li>Fits within Google's display limit (roughly 600 pixels, or about 60 characters)</li>
-  </ul>
-
-  <h2>Where to put your keyword</h2>
-  <p>Place your primary keyword as close to the beginning of the title as possible. Google gives more weight to words that appear earlier, and users scanning a results page see the first words first.</p>
-  <p>Compare these two title tags for the same page:</p>
-  <ul>
-    <li>"Our Tampa Dental Practice | Family and Cosmetic Dentistry | Smith Dental"</li>
-    <li>"Tampa Family Dentist | Cosmetic Dentistry | Smith Dental"</li>
-  </ul>
-  <p>The second version leads with the keyword and is cleaner. The first buries it behind brand language that no one is searching for.</p>
-
-  <h2>Match the title to search intent</h2>
-  <p>Your title needs to match what someone searching that keyword actually wants to find. Google is increasingly good at detecting mismatches between title promises and page content, and it will rewrite your title if it thinks yours is misleading or off-topic.</p>
-  <div class="callout"><p>Google rewrites title tags roughly 20% of the time. The most common reason is that the title does not accurately reflect the page content. If your titles keep getting rewritten, the fix is usually to make them more descriptive, not shorter.</p></div>
-  <p>Check the search results for your target keyword before writing the title. Look at the pattern of titles already ranking. That pattern tells you what Google and users expect.</p>
-
-  <h2>Write for click-through, not just keywords</h2>
-  <p>A title that ranks but does not get clicked is wasted. Click-through rate matters both directly (more visitors) and indirectly (it can influence rankings over time). Make your title the most compelling option on the page.</p>
-  <p>Techniques that improve CTR:</p>
-  <ul>
-    <li><strong>Include the year</strong> for guides and listicles: "How to Do Keyword Research (2026 Guide)" signals freshness</li>
-    <li><strong>Use numbers</strong> where natural: "7 Google Business Profile Mistakes" is more specific than "Google Business Profile Mistakes"</li>
-    <li><strong>Address the user directly</strong> where it fits: "How to..." and "Your..." tend to outperform third-person phrasing</li>
-    <li><strong>Signal the page type</strong>: "Guide," "Checklist," "Template" tells users exactly what they are getting</li>
-  </ul>
-
-  <h2>Keep it within the character limit</h2>
-  <p>Google truncates titles that are too long with an ellipsis in search results. The cutoff is based on pixel width, not character count, but 55 to 60 characters is a reliable safe zone.</p>
-  <p>If your title is too long, prioritize the keyword and the value proposition. Cut brand name to the end or drop it entirely. Your brand name appearing in the URL is often enough.</p>
-  <p>If your title is too short (under 30 characters), you are leaving space on the table. Add more descriptive language.</p>
-
-  <h2>Common title tag mistakes to avoid</h2>
-  <ul>
-    <li><strong>Using the same title on multiple pages:</strong> Every page needs a unique title that reflects its specific content</li>
-    <li><strong>Keyword stuffing:</strong> "Tampa Plumber | Best Plumber Tampa | Tampa Plumbing Services" reads as spam and Google treats it that way</li>
-    <li><strong>Generic titles:</strong> "Home," "Services," "About Us" tell Google and users nothing</li>
-    <li><strong>Leading with the brand name:</strong> Unless you are a well-known brand, your keyword should come first</li>
-    <li><strong>Writing for the tool, not the reader:</strong> If a title sounds robotic when you read it out loud, rewrite it</li>
-  </ul>
-
-  <h2>A simple formula to start with</h2>
-  <p>When in doubt, use this structure:</p>
-  <p><strong>[Primary Keyword] | [Secondary benefit or page type] | [Brand Name]</strong></p>
-  <p>For example: "Tampa Family Dentist | Accepting New Patients | Smith Dental"</p>
-  <p>It is not always the most creative title, but it is clear, keyword-forward, and gives the user a reason to click. From there you can refine based on what your competitors are doing and what your click-through data tells you over time.</p>
-
-  <div class="article-cta">
-    <h3>Need your on-page SEO audited?</h3>
-    <p>Title tags are just one piece of on-page optimization. I audit and rewrite title tags, meta descriptions, headers, and internal linking as part of my on-page SEO service.</p>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('contact');if(el)el.scrollIntoView({behavior:'smooth'});},80)" class="btn-p">Get in touch</a>
-  </div>
+<div class="article-body"><p>The title tag is the single most important on-page SEO element. It is what Google displays as the clickable headline in search results, and it is one of the clearest signals you can send about what a page is about.</p>
+<h2>What a title tag actually does</h2>
+<p>A title tag serves two audiences simultaneously: search engines and humans. For Google, it is a relevance signal. For the person scanning search results, it is an ad headline. Your job is to satisfy both at once.</p>
+<ul><li>Includes the primary keyword for the page</li><li>Accurately describes the page content</li><li>Compels the right person to click</li><li>Fits within Google display limit of roughly 60 characters</li></ul>
+<h2>Where to put your keyword</h2>
+<p>Place your primary keyword as close to the beginning of the title as possible. Google gives more weight to words that appear earlier, and users scanning a results page see the first words first.</p>
+<h2>Match the title to search intent</h2>
+<p>Your title needs to match what someone searching that keyword actually wants to find. Check the search results for your target keyword before writing the title. Look at the pattern of titles already ranking. That pattern tells you what Google and users expect.</p>
+<div class="callout"><p>Google rewrites title tags roughly 20% of the time. The most common reason is that the title does not accurately reflect the page content. If your titles keep getting rewritten, make them more descriptive.</p></div>
+<h2>Write for click-through, not just keywords</h2>
+<ul><li><strong>Include the year</strong> for guides and listicles to signal freshness</li><li><strong>Use numbers</strong> where natural: "7 Google Business Profile Mistakes"</li><li><strong>Address the user directly:</strong> "How to..." tends to outperform third-person phrasing</li><li><strong>Signal the page type:</strong> "Guide," "Checklist," "Template" tells users exactly what they are getting</li></ul>
+<h2>Common title tag mistakes to avoid</h2>
+<ul><li><strong>Using the same title on multiple pages:</strong> Every page needs a unique title</li><li><strong>Keyword stuffing:</strong> Reads as spam and Google treats it that way</li><li><strong>Generic titles:</strong> "Home," "Services," "About Us" tell Google and users nothing</li><li><strong>Leading with the brand name:</strong> Unless you are a well-known brand, your keyword should come first</li></ul>
+<h2>A simple formula to start with</h2>
+<p><strong>[Primary Keyword] | [Secondary benefit or page type] | [Brand Name]</strong></p>
+<p>For example: "Tampa Family Dentist | Accepting New Patients | Smith Dental"</p>
+<div class="article-cta"><h3>Need your on-page SEO audited?</h3><p>Title tags are just one piece of on-page optimization. I audit and rewrite title tags, meta descriptions, headers, and internal linking as part of my on-page SEO service.</p><button class="btn-p" onclick="hidePage();setTimeout(function(){document.getElementById('contact').scrollIntoView({behavior:'smooth'})},80)">Get in touch</button></div></div>
 </div>
 
-<footer>
-  <div style="font-family:&#39;Fraunces&#39;,serif;font-weight:700;font-size:1rem;color:var(--cream)">Maddie Conroy <span style="color:var(--accent)">SEO</span></div>
-  <div class="foot-links">
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('services');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Services</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('guides');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Guides</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('blog');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Blog</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('contact');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Contact</a>
-  </div>
-  <div>© 2026 workwithmaddie.com</div>
-</footer>
-</div>
-<div id="guides-content-strategy" class="page-overlay">
+<div id="g4" class="page-overlay">
 <div class="back-bar"><button onclick="hidePage()"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg> Back to home</button></div>
-<nav>
-  <a href="#" onclick="hidePage();return false;" class="logo">Maddie Conroy <span>SEO</span></a>
-  <div class="nav-links">
-    <a href="#">Home</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('services');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Services</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('guides');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Guides</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('blog');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Blog</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('contact');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Contact</a>
-  </div>
-  <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('contact');if(el)el.scrollIntoView({behavior:'smooth'});},80)" class="nav-btn">Work with me</a>
-</nav>
-
 <div class="article-hero">
-  <div class="article-eyebrow">
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('guides');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Guides</a>
-    <span class="sep">›</span> SEO How-To Series
-  </div>
+  <div class="article-eyebrow"><span onclick="hidePage();setTimeout(function(){document.getElementById('guides').scrollIntoView({behavior:'smooth'});},80)">Guides</span><span class="sep">&#8250;</span> SEO</div>
   <h1 class="article-title">How to create a content strategy that builds over time</h1>
-  <p style="font-size:1.05rem;color:var(--cream-dim);margin-top:.8rem;margin-bottom:0">
-    Topic clusters, pillar pages, editorial calendars, and gap analysis. How to build content that compounds instead of just filling a blog.
-  </p>
-  <div class="article-meta">
-    <span class="meta-tag">Content Strategy</span>
-    <span class="meta-dot">·</span>
-    <span>Maddie Conroy</span>
-    <span class="meta-dot">·</span>
-    <span>May 2026</span>
-    <span class="meta-dot">·</span>
-    <span>~12 min read</span>
-  </div>
+  <p style="font-size:1.05rem;color:var(--cream-dim);margin-top:.8rem;margin-bottom:0">Topic clusters, pillar pages, editorial calendars, and gap analysis. How to build content that compounds instead of just filling a blog.</p>
+  <div class="article-meta"><span class="meta-tag">Content Strategy</span><span class="meta-dot">·</span><span>Maddie Conroy</span><span class="meta-dot">·</span><span>May 2026</span><span class="meta-dot">·</span><span>~12 min read</span></div>
 </div>
-<div class="article-body">
-  <p>Most businesses that "do content" are not doing content strategy. They are doing content activity: publishing blog posts on a loose schedule, writing about what seems interesting that week, and hoping something ranks. It rarely compounds. It just accumulates.</p>
-  <p>A real content strategy starts with understanding what your audience is searching for, maps that to a deliberate site architecture, and creates a system where each piece of content reinforces the others. This guide walks through how to build one.</p>
-
-  <h2>Start with a content audit if you have existing content</h2>
-  <p>Before creating anything new, understand what you already have. Catalogue every piece of content on your site: the URL, the title, the primary keyword it targets (if any), and its current performance in Google Search Console.</p>
-  <p>Sort your content into three buckets:</p>
-  <ul>
-    <li><strong>Keep and improve:</strong> Content that already ranks or gets traffic and could rank better with an update</li>
-    <li><strong>Consolidate:</strong> Multiple thin pages covering the same topic that would be stronger combined into one</li>
-    <li><strong>Cut or redirect:</strong> Content with no traffic, no rankings, and no clear purpose</li>
-  </ul>
-  <p>Improving existing content almost always delivers faster results than creating new content. Start there.</p>
-
-  <h2>Build your strategy around topic clusters</h2>
-  <p>The topic cluster model is the most durable content architecture for SEO. It works like this:</p>
-  <ul>
-    <li>A <strong>pillar page</strong> covers a broad topic comprehensively. It is the definitive resource on that subject on your site.</li>
-    <li><strong>Cluster pages</strong> cover specific subtopics in depth. Each one links back to the pillar page.</li>
-    <li>The pillar page links out to all its cluster pages.</li>
-  </ul>
-  <p>This structure tells Google that your site has serious depth on a topic, not just surface-level coverage. It also distributes authority from high-performing pages to newer ones through internal links.</p>
-  <div class="callout"><p>Example: A local accountant's pillar page might be "Small Business Accounting in Tampa." Cluster pages would cover: quarterly estimated taxes, LLC vs S-corp tax treatment, bookkeeping basics, payroll for small businesses, and year-end tax prep. Each cluster page links to the pillar. The pillar links to all cluster pages.</p></div>
-
-  <h2>Map keywords to content before you write anything</h2>
-  <p>Every piece of content should target a defined keyword cluster before you write a single word. This means:</p>
-  <ol>
-    <li>Identify the primary keyword the page will target</li>
-    <li>Find 3 to 8 semantically related keywords the same page can naturally incorporate</li>
-    <li>Confirm the search intent (what does someone searching this keyword actually want?)</li>
-    <li>Check what is already ranking and what format is winning (listicle, guide, tool, comparison)</li>
-  </ol>
-  <p>A content brief that takes 20 minutes to write saves hours of rewriting later and produces better-optimized content every time.</p>
-
-  <h2>Do a gap analysis to find your biggest opportunities</h2>
-  <p>A gap analysis shows you keywords your competitors rank for that you do not. These are your most direct content opportunities because you know there is demand and you know it is winnable.</p>
-  <p>You can do a basic version of this manually:</p>
-  <ul>
-    <li>Identify two or three competitors who rank well in your space</li>
-    <li>Look at what pages they have that you do not</li>
-    <li>Search for keywords related to your services and note which competitors appear, then check if you do too</li>
-  </ul>
-  <p>If you have access to a tool like Semrush or Ahrefs, the gap analysis feature automates this. The free tier of Ubersuggest gives you a limited version.</p>
-
-  <h2>Build an editorial calendar you will actually use</h2>
-  <p>An editorial calendar is only useful if it is realistic. A business that can produce one quality piece of content per month is better off than one that plans four pieces per month and produces one erratically.</p>
-  <p>Your calendar should include:</p>
-  <ul>
-    <li>The target publish date</li>
-    <li>The page title and primary keyword</li>
-    <li>The content type (pillar page, cluster article, GBP post, landing page)</li>
-    <li>Who is writing it and who is reviewing it</li>
-    <li>Status</li>
-  </ul>
-  <p>Prioritize your calendar by business impact first, then search volume, then ease of production. A high-intent, low-competition keyword about your most profitable service beats a high-volume keyword about something tangential.</p>
-
-  <h2>Update content as a habit, not an afterthought</h2>
-  <p>Search results reward freshness for many query types, especially anything date-sensitive or rapidly evolving. Build content updates into your calendar alongside new content creation.</p>
-  <p>A good cadence for most small businesses:</p>
-  <ul>
-    <li>Review your top 10 traffic pages quarterly and update any outdated information</li>
-    <li>Add new examples, data, or sections to pillar pages as you publish more cluster content</li>
-    <li>Update the published date only when you have made substantive changes, not cosmetic edits</li>
-  </ul>
-
-  <h2>Measure what actually matters</h2>
-  <p>Vanity metrics like page views in isolation tell you very little. Track:</p>
-  <ul>
-    <li><strong>Organic sessions by page:</strong> Is traffic growing over time?</li>
-    <li><strong>Keyword rankings:</strong> Are you moving up for your target keywords?</li>
-    <li><strong>Conversions from organic traffic:</strong> Is the traffic turning into leads or sales?</li>
-    <li><strong>Average position in Search Console:</strong> Are pages on page two moving toward page one?</li>
-  </ul>
-  <p>Content strategy is a long game. Most content takes three to six months to rank meaningfully. If you are measuring results at week two, you are measuring too early.</p>
-
-  <div class="article-cta">
-    <h3>Want a content strategy built for your business?</h3>
-    <p>I develop content strategies including keyword mapping, topic clusters, gap analysis, and editorial calendars. You get a clear plan you can execute, or I can handle execution too.</p>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('contact');if(el)el.scrollIntoView({behavior:'smooth'});},80)" class="btn-p">Get in touch</a>
-  </div>
+<div class="article-body"><p>Most businesses that "do content" are not doing content strategy. They are doing content activity: publishing blog posts on a loose schedule, writing about what seems interesting that week, and hoping something ranks. It rarely compounds. It just accumulates.</p>
+<h2>Start with a content audit if you have existing content</h2>
+<p>Before creating anything new, understand what you already have. Sort your content into three buckets:</p>
+<ul><li><strong>Keep and improve:</strong> Content that already ranks or gets traffic and could rank better with an update</li><li><strong>Consolidate:</strong> Multiple thin pages covering the same topic that would be stronger combined into one</li><li><strong>Cut or redirect:</strong> Content with no traffic, no rankings, and no clear purpose</li></ul>
+<p>Improving existing content almost always delivers faster results than creating new content. Start there.</p>
+<h2>Build your strategy around topic clusters</h2>
+<ul><li>A <strong>pillar page</strong> covers a broad topic comprehensively. It is the definitive resource on that subject on your site.</li><li><strong>Cluster pages</strong> cover specific subtopics in depth. Each one links back to the pillar page.</li><li>The pillar page links out to all its cluster pages.</li></ul>
+<div class="callout"><p>Example: A local accountant pillar page might be "Small Business Accounting in Tampa." Cluster pages would cover quarterly estimated taxes, LLC vs S-corp treatment, bookkeeping basics, payroll, and year-end tax prep.</p></div>
+<h2>Map keywords to content before you write anything</h2>
+<ol><li>Identify the primary keyword the page will target</li><li>Find 3 to 8 semantically related keywords the same page can naturally incorporate</li><li>Confirm the search intent</li><li>Check what is already ranking and what format is winning</li></ol>
+<h2>Do a gap analysis to find your biggest opportunities</h2>
+<ul><li>Identify two or three competitors who rank well in your space</li><li>Look at what pages they have that you do not</li><li>Search for keywords related to your services and note which competitors appear</li></ul>
+<h2>Build an editorial calendar you will actually use</h2>
+<p>A business that can produce one quality piece of content per month is better off than one that plans four pieces per month and produces one erratically. Prioritize your calendar by business impact first, then search volume, then ease of production.</p>
+<h2>Measure what actually matters</h2>
+<ul><li><strong>Organic sessions by page:</strong> Is traffic growing over time?</li><li><strong>Keyword rankings:</strong> Are you moving up for your target keywords?</li><li><strong>Conversions from organic traffic:</strong> Is the traffic turning into leads or sales?</li></ul>
+<p>Content strategy is a long game. Most content takes three to six months to rank meaningfully.</p>
+<div class="article-cta"><h3>Want a content strategy built for your business?</h3><p>I develop content strategies including keyword mapping, topic clusters, gap analysis, and editorial calendars. You get a clear plan you can execute, or I can handle execution too.</p><button class="btn-p" onclick="hidePage();setTimeout(function(){document.getElementById('contact').scrollIntoView({behavior:'smooth'})},80)">Get in touch</button></div></div>
 </div>
 
-<footer>
-  <div style="font-family:&#39;Fraunces&#39;,serif;font-weight:700;font-size:1rem;color:var(--cream)">Maddie Conroy <span style="color:var(--accent)">SEO</span></div>
-  <div class="foot-links">
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('services');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Services</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('guides');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Guides</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('blog');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Blog</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('contact');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Contact</a>
-  </div>
-  <div>© 2026 workwithmaddie.com</div>
-</footer>
-</div>
-<div id="guides-seo-reporting" class="page-overlay">
+<div id="b1" class="page-overlay">
 <div class="back-bar"><button onclick="hidePage()"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg> Back to home</button></div>
-<nav>
-  <a href="#" onclick="hidePage();return false;" class="logo">Maddie Conroy <span>SEO</span></a>
-  <div class="nav-links">
-    <a href="#">Home</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('services');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Services</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('guides');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Guides</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('blog');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Blog</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('contact');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Contact</a>
-  </div>
-  <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('contact');if(el)el.scrollIntoView({behavior:'smooth'});},80)" class="nav-btn">Work with me</a>
-</nav>
-
 <div class="article-hero">
-  <div class="article-eyebrow">
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('guides');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Guides</a>
-    <span class="sep">›</span> SEO How-To Series
-  </div>
-  <h1 class="article-title">How to read an SEO report and know what matters</h1>
-  <p style="font-size:1.05rem;color:var(--cream-dim);margin-top:.8rem;margin-bottom:0">
-    What metrics actually connect to business outcomes, and how to tell the difference between vanity numbers and signals worth acting on.
-  </p>
-  <div class="article-meta">
-    <span class="meta-tag">SEO Strategy</span>
-    <span class="meta-dot">·</span>
-    <span>Maddie Conroy</span>
-    <span class="meta-dot">·</span>
-    <span>May 2026</span>
-    <span class="meta-dot">·</span>
-    <span>~9 min read</span>
-  </div>
+  <div class="article-eyebrow"><span onclick="hidePage();setTimeout(function(){document.getElementById('blog').scrollIntoView({behavior:'smooth'});},80)">Blog</span><span class="sep">&#8250;</span> SEO</div>
+  <h1 class="article-title">Why your Google Business Profile is not driving calls (and how to fix it)</h1>
+  <p style="font-size:1.05rem;color:var(--cream-dim);margin-top:.8rem;margin-bottom:0">Most GBP underperformance comes down to a handful of fixable mistakes. Here is what to audit first and what changes actually move the needle.</p>
+  <div class="article-meta"><span class="meta-tag">Local SEO</span><span class="meta-dot">·</span><span>Maddie Conroy</span><span class="meta-dot">·</span><span>May 2026</span><span class="meta-dot">·</span><span>~7 min read</span></div>
 </div>
-<div class="article-body">
-  <p>SEO reports can be overwhelming if you do not know what to look for, and underwhelming if whoever is sending them is padding them with numbers that sound impressive but do not connect to your business. This guide helps you read any SEO report with clarity, ask the right questions, and know when things are actually going well versus when they just look like they are.</p>
-
-  <h2>The metrics that actually matter</h2>
-  <p>Every SEO report will include a mix of leading indicators (things that signal future performance) and lagging indicators (things that reflect what already happened). You need both, but they mean different things.</p>
-
-  <h3>Organic traffic</h3>
-  <p>How many people are arriving at your site from unpaid search results. This is the most direct measure of SEO performance. Look at it over time, not just point-in-time. A chart trending upward over six months tells a better story than any single month's number.</p>
-  <p>Always segment by page and by keyword when you can. Total organic traffic can go up while your most important pages go down if something else is picking up unrelated visitors.</p>
-
-  <h3>Keyword rankings</h3>
-  <p>Where your pages appear in Google search results for specific queries. Rankings are a leading indicator: improving rankings usually precede traffic increases by weeks or months.</p>
-  <p>Do not fixate on rank position alone. A keyword where you move from position 18 to position 9 will not show much traffic difference. Moving from position 9 to position 3 can triple your clicks. The top three positions capture the majority of clicks for most queries.</p>
-
-  <h3>Impressions and click-through rate</h3>
-  <p>From Google Search Console. Impressions tell you how often your pages appeared in search results. Click-through rate (CTR) tells you what percentage of those impressions resulted in a click.</p>
-  <div class="callout"><p>High impressions with low CTR is a specific problem with a specific fix: your title tags and meta descriptions are not compelling enough for the searches you are appearing in. This is one of the fastest wins in SEO because you can improve CTR without improving rankings at all.</p></div>
-
-  <h3>Conversions from organic traffic</h3>
-  <p>This is the metric most SEO reports underreport. How many of your organic visitors actually do what you want them to do: call you, fill out a form, make a purchase, book an appointment? If your SEO report never mentions conversions, ask for them.</p>
-  <p>Set up goal tracking in Google Analytics (or GA4's event tracking) so organic conversion data is available. Without it, you cannot connect SEO activity to business outcomes.</p>
-
-  <h3>Page-level performance</h3>
-  <p>Which specific pages are driving traffic? Which ones have improved or declined? A healthy SEO program does not rely on one or two pages for all its organic traffic. Diversification across pages protects you when Google updates its algorithm.</p>
-
-  <h2>Metrics that often mislead</h2>
-
-  <h3>Domain authority</h3>
-  <p>Domain Authority (DA) is a third-party metric created by Moz. Ahrefs has Domain Rating (DR). Neither is a Google metric and neither directly causes rankings. They are proxies for link strength. Useful for competitive benchmarking, but do not let an increase in DA convince you that SEO is working if traffic is flat.</p>
-
-  <h3>Total keywords ranked</h3>
-  <p>Your site might rank for thousands of keywords, most of them at positions 50 through 100 where no one ever sees them. "We rank for 4,000 keywords" means nothing without context about where those rankings sit and whether they are for queries your customers actually use.</p>
-
-  <h3>Bounce rate</h3>
-  <p>Bounce rate (and engagement rate in GA4) is heavily context-dependent. A blog post with a 90% bounce rate might be performing perfectly if people are reading the whole article and then leaving satisfied. A service page with a 90% bounce rate is a problem. Interpret it by page type, not in aggregate.</p>
-
-  <h2>How to read a report month over month</h2>
-  <p>When you receive a monthly SEO report, here is the sequence of questions to ask:</p>
-  <ol>
-    <li>Did organic traffic go up or down compared to last month and compared to the same month last year?</li>
-    <li>Are the keywords we are targeting moving toward the first page?</li>
-    <li>Which pages gained the most and which lost the most? Why?</li>
-    <li>Did conversions from organic traffic change?</li>
-    <li>What work was done this month and what is planned for next month?</li>
-  </ol>
-  <p>That last question is important. A report that only shows you numbers but does not explain the work behind them or the plan going forward is just a dashboard, not a strategy update.</p>
-
-  <h2>Seasonality: always compare year over year</h2>
-  <p>Many businesses have seasonal search patterns. A landscaping company will see organic traffic drop in winter and spike in spring. A tax accountant's search volume peaks in March and April. If you only compare month over month, seasonal dips will look like performance problems when they are entirely normal.</p>
-  <p>Always request year-over-year comparisons for any metric where seasonality could be a factor.</p>
-
-  <h2>Red flags in an SEO report</h2>
-  <ul>
-    <li>Traffic going up but no explanation of what changed</li>
-    <li>Rankings improving for keywords that are not related to your core business</li>
-    <li>No mention of conversions or leads from organic</li>
-    <li>Reports that celebrate domain authority increases but show no traffic movement</li>
-    <li>No plan for the next month</li>
-    <li>Numbers that never go down (real SEO has fluctuations)</li>
-  </ul>
-
-  <div class="article-cta">
-    <h3>Want SEO reporting that actually makes sense?</h3>
-    <p>I send monthly reports in plain English that connect what I am doing to what is happening in your traffic and leads. No padding, no vanity metrics.</p>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('contact');if(el)el.scrollIntoView({behavior:'smooth'});},80)" class="btn-p">Get in touch</a>
-  </div>
+<div class="article-body"><p>A Google Business Profile that sits mostly idle is one of the most common and most fixable problems I see when I start working with a new local business client. The profile exists, it is verified, it has a few photos from three years ago, and it gets maybe one or two calls a week when the business knows it should be getting ten.</p>
+<h2>Your primary category is wrong or too broad</h2>
+<p>This is the most impactful and most overlooked fix. Your primary category tells Google which searches you are eligible to appear in. Search Google for your main service plus your city. Look at what category the top three map pack results use. If yours is different, change it.</p>
+<h2>Your business description is not doing any work</h2>
+<p>Most business descriptions either read like a legal disclaimer or are completely blank. Your description is 750 characters of free real estate in Google search results. Write it to answer two questions: what do you do, and why should someone choose you over the other results?</p>
+<h2>You have no recent reviews and you are not responding to the ones you have</h2>
+<p>Review recency matters. A profile with 50 reviews, the newest of which is from 18 months ago, looks like a business that has slowed down or stopped caring. Build review generation into your process. After a positive interaction, ask. And respond to every review.</p>
+<h2>Your photos are outdated or stock images</h2>
+<p>Upload real, recent photos: your exterior, your interior, your team, your work. Add new photos consistently. Monthly is fine. Weekly is better. Consistent activity on your profile signals to Google that you are an active, legitimate business.</p>
+<h2>You are not using Google Posts</h2>
+<p>Google Posts appear directly on your profile in search results. Most of your competitors are not using them. Posts expire after seven days, so aim for at least one per week. Each post should have a call to action.</p>
+<h2>Your NAP information is inconsistent across the web</h2>
+<p>NAP stands for Name, Address, Phone number. Audit your major citations: Yelp, Facebook, Apple Maps, Bing Places, your chamber of commerce listing, and any industry directories. Make your NAP identical everywhere.</p>
+<h2>You have not looked at your GBP Insights</h2>
+<p>Your GBP dashboard includes performance data: how many people viewed your profile, how many clicked for directions, how many called directly from the listing. Check it monthly. The data tells you where the breakdown is. Without it, you are optimizing blind.</p>
+<div class="article-cta"><h3>Want your GBP fully optimized and actively managed?</h3><p>Local SEO and GBP management is a core part of what I do. I audit, optimize, post, and report on your profile monthly so it is always working as hard as it can.</p><button class="btn-p" onclick="hidePage();setTimeout(function(){document.getElementById('contact').scrollIntoView({behavior:'smooth'})},80)">Get in touch</button></div></div>
 </div>
 
-<footer>
-  <div style="font-family:&#39;Fraunces&#39;,serif;font-weight:700;font-size:1rem;color:var(--cream)">Maddie Conroy <span style="color:var(--accent)">SEO</span></div>
-  <div class="foot-links">
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('services');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Services</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('guides');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Guides</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('blog');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Blog</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('contact');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Contact</a>
-  </div>
-  <div>© 2026 workwithmaddie.com</div>
-</footer>
-</div>
-<div id="blog-gbp-not-driving-calls" class="page-overlay">
+<div id="b2" class="page-overlay">
 <div class="back-bar"><button onclick="hidePage()"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg> Back to home</button></div>
-<nav>
-  <a href="#" onclick="hidePage();return false;" class="logo">Maddie Conroy <span>SEO</span></a>
-  <div class="nav-links">
-    <a href="#">Home</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('services');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Services</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('guides');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Guides</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('blog');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Blog</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('contact');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Contact</a>
-  </div>
-  <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('contact');if(el)el.scrollIntoView({behavior:'smooth'});},80)" class="nav-btn">Work with me</a>
-</nav>
-
 <div class="article-hero">
-  <div class="article-eyebrow">
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('blog');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Blog</a>
-    <span class="sep">›</span> Local SEO
-  </div>
-  <h1 class="article-title">Why your Google Business Profile isn't driving calls (and how to fix it)</h1>
-  <p style="font-size:1.05rem;color:var(--cream-dim);margin-top:.8rem;margin-bottom:0">
-    Most GBP underperformance comes down to a handful of fixable mistakes. Here's what to audit first and what changes actually move the needle.
-  </p>
-  <div class="article-meta">
-    <span class="meta-tag">Local SEO</span>
-    <span class="meta-dot">·</span>
-    <span>Maddie Conroy</span>
-    <span class="meta-dot">·</span>
-    <span>May 2026</span>
-    <span class="meta-dot">·</span>
-    <span>~7 min read</span>
-  </div>
-</div>
-<div class="article-body">
-  <p>A Google Business Profile that sits mostly idle is one of the most common and most fixable problems I see when I start working with a new local business client. The profile exists, it is verified, it has a few photos from three years ago, and it gets maybe one or two calls a week when the business knows it should be getting ten.</p>
-  <p>The issue is almost never that GBP does not work. The issue is that the profile is not giving Google or potential customers enough reason to surface it or click it. Here is what to check first.</p>
-
-  <h2>Your primary category is wrong or too broad</h2>
-  <p>This is the most impactful and most overlooked fix. Your primary category tells Google which searches you are eligible to appear in. If you are a family dentist listed as "Dentist" instead of "Family Dentist" or "Cosmetic Dentist," you are competing in a broader pool than you need to be and missing more specific searches where intent is higher.</p>
-  <p>Search Google for your main service plus your city. Look at what category the top three map pack results use. If yours is different, change it. You can also add secondary categories for additional services, which creates more surface area without diluting your primary.</p>
-
-  <h2>Your business description is not doing any work</h2>
-  <p>Most business descriptions either read like a legal disclaimer or are completely blank. Your description is 750 characters of free real estate in Google search results. Use it.</p>
-  <p>Write it to answer two questions a potential customer would have: what do you do, and why should I choose you over the other results I am looking at right now? Include your main service keywords naturally. Mention your location. Give them a reason to click through.</p>
-  <p>Avoid keyword stuffing. "Tampa plumber Tampa plumbing services Tampa FL plumber" is not a description, it is spam, and Google will treat it as such.</p>
-
-  <h2>You have no recent reviews and you are not responding to the ones you have</h2>
-  <p>Review recency matters. A profile with 50 reviews, the newest of which is from 18 months ago, looks like a business that has either slowed down or stopped caring. Google factors review recency into local rankings, and customers notice the timestamps.</p>
-  <p>Build review generation into your process. After a positive interaction, ask. Send a follow-up text with a direct link to your review form (available in your GBP dashboard). Make it frictionless.</p>
-  <p>And respond to every review. For positive reviews, keep it warm and specific. For negative reviews, stay calm and take the conversation offline. Google indexes responses. They are content, not just courtesy.</p>
-
-  <h2>Your photos are outdated or stock images</h2>
-  <p>Profiles with photos receive more clicks and direction requests than those without. But old photos or obvious stock imagery can actually hurt you by making the business look generic or out of date.</p>
-  <p>Upload real, recent photos: your exterior, your interior, your team, your work. For service businesses, before-and-after images perform particularly well. Add new photos consistently. Monthly is fine. Weekly is better. Consistent activity on your profile signals to Google that you are an active, legitimate business.</p>
-
-  <h2>You are not using Google Posts</h2>
-  <p>Google Posts appear directly on your profile in search results. Most of your competitors are not using them. That means if you do, you immediately stand out.</p>
-  <p>Posts can highlight promotions, announce new services, share recent work, or simply remind people what you do. They expire after seven days, so aim for at least one per week. Each post should have a call to action: call now, book online, learn more.</p>
-  <p>The cumulative effect of consistent posting is an active-looking profile that both Google and potential customers treat as more trustworthy than a static one.</p>
-
-  <h2>Your NAP information is inconsistent across the web</h2>
-  <p>NAP stands for Name, Address, Phone number. If your GBP lists your address as "123 Main St" but your website and Yelp listing say "123 Main Street," that inconsistency is a small local ranking signal problem that compounds across dozens of directories.</p>
-  <p>Audit your major citations: Yelp, Facebook, Apple Maps, Bing Places, your chamber of commerce listing, and any industry directories. Make your NAP identical everywhere. Same formatting, same phone number, same name.</p>
-
-  <h2>You have not looked at your GBP Insights</h2>
-  <p>Your GBP dashboard includes performance data: how many people viewed your profile, how many clicked for directions, how many called directly from the listing, what search queries led people to your profile. Most business owners never look at this.</p>
-  <p>Check it monthly. If you are getting a lot of profile views but almost no calls or direction requests, something is breaking down between the impression and the action. That is a profile content problem. If you are not getting profile views at all, that is a visibility problem.</p>
-  <p>The data tells you where the breakdown is. Without it, you are optimizing blind.</p>
-
-  <div class="article-cta">
-    <h3>Want your GBP fully optimized and actively managed?</h3>
-    <p>Local SEO and GBP management is a core part of what I do. I audit, optimize, post, and report on your profile monthly so it is always working as hard as it can.</p>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('contact');if(el)el.scrollIntoView({behavior:'smooth'});},80)" class="btn-p">Get in touch</a>
-  </div>
-</div>
-
-<footer>
-  <div style="font-family:&#39;Fraunces&#39;,serif;font-weight:700;font-size:1rem;color:var(--cream)">Maddie Conroy <span style="color:var(--accent)">SEO</span></div>
-  <div class="foot-links">
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('services');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Services</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('guides');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Guides</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('blog');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Blog</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('contact');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Contact</a>
-  </div>
-  <div>© 2026 workwithmaddie.com</div>
-</footer>
-</div>
-<div id="blog-content-that-ranks" class="page-overlay">
-<div class="back-bar"><button onclick="hidePage()"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg> Back to home</button></div>
-<nav>
-  <a href="#" onclick="hidePage();return false;" class="logo">Maddie Conroy <span>SEO</span></a>
-  <div class="nav-links">
-    <a href="#">Home</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('services');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Services</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('guides');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Guides</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('blog');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Blog</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('contact');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Contact</a>
-  </div>
-  <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('contact');if(el)el.scrollIntoView({behavior:'smooth'});},80)" class="nav-btn">Work with me</a>
-</nav>
-
-<div class="article-hero">
-  <div class="article-eyebrow">
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('blog');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Blog</a>
-    <span class="sep">›</span> Content Strategy
-  </div>
+  <div class="article-eyebrow"><span onclick="hidePage();setTimeout(function(){document.getElementById('blog').scrollIntoView({behavior:'smooth'});},80)">Blog</span><span class="sep">&#8250;</span> SEO</div>
   <h1 class="article-title">The difference between content that ranks and content that just exists</h1>
-  <p style="font-size:1.05rem;color:var(--cream-dim);margin-top:.8rem;margin-bottom:0">
-    Publishing is not a strategy. Here is how to think about intent, structure, and distribution so every piece of content has an actual job to do.
-  </p>
-  <div class="article-meta">
-    <span class="meta-tag">Content Strategy</span>
-    <span class="meta-dot">·</span>
-    <span>Maddie Conroy</span>
-    <span class="meta-dot">·</span>
-    <span>May 2026</span>
-    <span class="meta-dot">·</span>
-    <span>~9 min read</span>
-  </div>
+  <p style="font-size:1.05rem;color:var(--cream-dim);margin-top:.8rem;margin-bottom:0">Publishing is not a strategy. Here is how to think about intent, structure, and distribution so every piece of content has an actual job to do.</p>
+  <div class="article-meta"><span class="meta-tag">Content Strategy</span><span class="meta-dot">·</span><span>Maddie Conroy</span><span class="meta-dot">·</span><span>May 2026</span><span class="meta-dot">·</span><span>~9 min read</span></div>
 </div>
-<div class="article-body">
-  <p>There is a specific type of content that every business with a blog has too much of. It is well-written, inoffensive, and utterly invisible. It was published with good intentions and immediately forgotten by Google and everyone else.</p>
-  <p>The problem is not the writing quality. The problem is that the content was created without answering the one question that determines whether any piece of content will ever rank: what search is this piece designed to win, and does it win it better than everything else currently out there?</p>
-  <p>Here is how to think about the difference.</p>
-
-  <h2>Content that just exists was written for the wrong audience</h2>
-  <p>A lot of business content is written for the business, not for the searcher. It is written to demonstrate expertise to people who already know you, to fill a content calendar, or to satisfy an internal stakeholder who wanted "more blog posts."</p>
-  <p>Content that ranks is written for a specific person who typed a specific query into Google. That person has a specific problem, a specific level of knowledge, and a specific thing they want to find at the end of the click. Every structural and editorial decision in a piece of content that ranks is in service of that person.</p>
-  <p>Before writing anything, ask: who is searching this, what do they actually want, and what does the ideal piece of content for this search look like? If you cannot answer all three, you are not ready to write.</p>
-
-  <h2>Search intent is the frame everything else fits inside</h2>
-  <p>Google has gotten very good at understanding what people want when they search. The pages that rank on page one are the pages Google has determined best match the intent behind the query. Your job is to match or beat that.</p>
-  <p>Open Google and search for the keyword you want to target. Look at what is already ranking:</p>
-  <ul>
-    <li>Are the results mostly blog posts, or mostly product and service pages?</li>
-    <li>Are they listicles, step-by-step guides, or comparison articles?</li>
-    <li>Are they long and comprehensive, or short and direct?</li>
-    <li>What questions do they answer in the first 200 words?</li>
-  </ul>
-  <p>That is the format Google has determined satisfies this intent. You can differentiate within that format, but you cannot ignore the format entirely. A 500-word thought leadership piece will not rank for a query where everything on page one is a comprehensive 2,000-word guide.</p>
-
-  <h2>Structure is a ranking factor people underestimate</h2>
-  <p>Google parses your content structure: your H1, your H2s, your paragraph length, your use of lists. Clear structure is not just a readability improvement, it is a signal that your content is well-organized and comprehensive.</p>
-  <p>Practical structure rules for content that ranks:</p>
-  <ul>
-    <li>One H1, containing your primary keyword, at the top of the page</li>
-    <li>H2s that answer specific questions or cover distinct subtopics</li>
-    <li>Short paragraphs, ideally two to four sentences</li>
-    <li>Bullet and numbered lists where they genuinely help (not forced formatting for its own sake)</li>
-    <li>A clear answer to the primary question early in the piece, with depth and nuance following</li>
-  </ul>
-  <p>The last point matters more than most people realize. Google's featured snippets and "People also ask" answers pull from content that answers a question clearly and concisely before elaborating. If your answer is buried in paragraph seven, you are losing that real estate to whoever put it in paragraph one.</p>
-
-  <h2>Thin content and low-value content are not the same problem</h2>
-  <p>Thin content is content that is too short to be useful for its purpose. A 200-word service page. A one-paragraph "how to" guide. These are thin because they do not give the reader enough to act on.</p>
-  <p>Low-value content can be very long and still worthless. It repeats the same ideas in different words. It answers obvious questions with obvious answers. It exists to hit a word count rather than to genuinely help someone.</p>
-  <p>Google penalizes both. The fix for thin content is expansion and depth. The fix for low-value content is a complete rethink of what the piece is actually trying to say and who it is for.</p>
-
-  <h2>Every piece of content needs a job description</h2>
-  <p>Before publishing anything, write out what job this piece is doing. It should be specific:</p>
-  <ul>
-    <li>"This page targets 'family dentist Tampa' and commercial-intent local searches. Its job is to rank in the local pack and convert readers into appointment requests."</li>
-    <li>"This blog post targets 'how to write a meta description' at the informational stage. Its job is to rank for that query, demonstrate expertise to prospective clients, and link to our on-page SEO service page."</li>
-  </ul>
-  <p>Vague jobs produce vague content. "This blog post is about SEO tips" is not a job. It is a topic. Topics do not rank. Pages with clear purpose and clear target searches do.</p>
-
-  <h2>Distribution is part of content strategy, not an afterthought</h2>
-  <p>Publishing and waiting is a strategy that works eventually for well-established sites with strong authority. For most small businesses and newer sites, you need to help new content get found.</p>
-  <p>At minimum:</p>
-  <ul>
-    <li>Link to new content from existing relevant pages on your site</li>
-    <li>Share it on any social channels where your audience is active</li>
-    <li>If it is particularly useful, pitch it to industry newsletters or publications as a guest resource</li>
-    <li>Submit the URL to Google Search Console so it gets crawled faster</li>
-  </ul>
-  <p>Internal linking matters especially. Every piece of new content should receive at least one internal link from an existing page with relevant context. This passes authority to the new page and helps Google find and index it faster.</p>
-
-  <h2>Update content that almost ranks</h2>
-  <p>One of the most underutilized content moves is updating existing content that ranks on page two or three. These pages are close. Google already thinks they are relevant. A substantive update, adding depth, updating data, improving structure, answering related questions, can often push them to page one in weeks rather than the months it takes a brand new page to build any authority.</p>
-  <p>Check Google Search Console for pages with high impressions but low clicks, sitting in positions 8 through 20. Those are your update candidates. Treat them as a priority over creating new content until you have exhausted them.</p>
-
-  <div class="article-cta">
-    <h3>Want a content strategy that actually builds rankings?</h3>
-    <p>I develop content strategies grounded in search intent, keyword mapping, and competitive analysis. Every piece of content I plan has a clear job and a clear target search.</p>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('contact');if(el)el.scrollIntoView({behavior:'smooth'});},80)" class="btn-p">Get in touch</a>
-  </div>
+<div class="article-body"><p>There is a specific type of content that every business with a blog has too much of. It is well-written, inoffensive, and utterly invisible. It was published with good intentions and immediately forgotten by Google and everyone else.</p>
+<p>The problem is not the writing quality. The problem is that the content was created without answering the one question that determines whether any piece of content will ever rank: what search is this piece designed to win, and does it win it better than everything else currently out there?</p>
+<h2>Content that just exists was written for the wrong audience</h2>
+<p>Content that ranks is written for a specific person who typed a specific query into Google. That person has a specific problem, a specific level of knowledge, and a specific thing they want to find at the end of the click. Before writing anything, ask: who is searching this, what do they actually want, and what does the ideal piece of content for this search look like?</p>
+<h2>Search intent is the frame everything else fits inside</h2>
+<p>Open Google and search for the keyword you want to target. Look at what is already ranking:</p>
+<ul><li>Are the results mostly blog posts, or mostly product and service pages?</li><li>Are they listicles, step-by-step guides, or comparison articles?</li><li>Are they long and comprehensive, or short and direct?</li></ul>
+<p>That is the format Google has determined satisfies this intent. You cannot ignore the format entirely.</p>
+<h2>Structure is a ranking factor people underestimate</h2>
+<ul><li>One H1, containing your primary keyword, at the top of the page</li><li>H2s that answer specific questions or cover distinct subtopics</li><li>Short paragraphs, ideally two to four sentences</li><li>A clear answer to the primary question early in the piece, with depth following</li></ul>
+<h2>Every piece of content needs a job description</h2>
+<p>Before publishing anything, write out what job this piece is doing. It should be specific. "This blog post targets how to write a meta description at the informational stage. Its job is to rank for that query, demonstrate expertise to prospective clients, and link to our on-page SEO service page." Vague jobs produce vague content.</p>
+<h2>Update content that almost ranks</h2>
+<p>Check Google Search Console for pages with high impressions but low clicks, sitting in positions 8 through 20. Those are your update candidates. A substantive update can often push them to page one in weeks rather than the months it takes a brand new page to build any authority.</p>
+<div class="article-cta"><h3>Want a content strategy that actually builds rankings?</h3><p>I develop content strategies grounded in search intent, keyword mapping, and competitive analysis. Every piece of content I plan has a clear job and a clear target search.</p><button class="btn-p" onclick="hidePage();setTimeout(function(){document.getElementById('contact').scrollIntoView({behavior:'smooth'})},80)">Get in touch</button></div></div>
 </div>
 
-<footer>
-  <div style="font-family:&#39;Fraunces&#39;,serif;font-weight:700;font-size:1rem;color:var(--cream)">Maddie Conroy <span style="color:var(--accent)">SEO</span></div>
-  <div class="foot-links">
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('services');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Services</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('guides');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Guides</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('blog');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Blog</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('contact');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Contact</a>
-  </div>
-  <div>© 2026 workwithmaddie.com</div>
-</footer>
-</div>
-<div id="blog-on-page-seo-2026" class="page-overlay">
+<div id="b3" class="page-overlay">
 <div class="back-bar"><button onclick="hidePage()"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg> Back to home</button></div>
-<nav>
-  <a href="#" onclick="hidePage();return false;" class="logo">Maddie Conroy <span>SEO</span></a>
-  <div class="nav-links">
-    <a href="#">Home</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('services');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Services</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('guides');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Guides</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('blog');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Blog</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('contact');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Contact</a>
-  </div>
-  <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('contact');if(el)el.scrollIntoView({behavior:'smooth'});},80)" class="nav-btn">Work with me</a>
-</nav>
-
 <div class="article-hero">
-  <div class="article-eyebrow">
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('blog');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Blog</a>
-    <span class="sep">›</span> On-Page SEO
-  </div>
+  <div class="article-eyebrow"><span onclick="hidePage();setTimeout(function(){document.getElementById('blog').scrollIntoView({behavior:'smooth'});},80)">Blog</span><span class="sep">&#8250;</span> SEO</div>
   <h1 class="article-title">On-page SEO in 2026: what still matters and what you can stop worrying about</h1>
-  <p style="font-size:1.05rem;color:var(--cream-dim);margin-top:.8rem;margin-bottom:0">
-    A grounded look at which on-page factors are worth your time, which are overhyped, and where most sites are leaving easy wins on the table.
-  </p>
-  <div class="article-meta">
-    <span class="meta-tag">On-Page SEO</span>
-    <span class="meta-dot">·</span>
-    <span>Maddie Conroy</span>
-    <span class="meta-dot">·</span>
-    <span>April 2026</span>
-    <span class="meta-dot">·</span>
-    <span>~11 min read</span>
-  </div>
+  <p style="font-size:1.05rem;color:var(--cream-dim);margin-top:.8rem;margin-bottom:0">A grounded look at which on-page factors are worth your time, which are overhyped, and where most sites are leaving easy wins on the table.</p>
+  <div class="article-meta"><span class="meta-tag">On-Page SEO</span><span class="meta-dot">·</span><span>Maddie Conroy</span><span class="meta-dot">·</span><span>April 2026</span><span class="meta-dot">·</span><span>~11 min read</span></div>
 </div>
-<div class="article-body">
-  <p>On-page SEO advice has a long shelf life problem. Tactics that were gospel five years ago are either table stakes now, mildly useful, or actively counterproductive. And because SEO content tends to circulate and get reshared long after it was written, a lot of businesses are spending time on things that barely move the needle while ignoring the factors that actually do.</p>
-  <p>This is a current-state look at on-page SEO: what the evidence and experience says about what to prioritize in 2026.</p>
-
-  <h2>What still matters, a lot</h2>
-
-  <h3>Title tags</h3>
-  <p>Still one of the highest-leverage on-page elements. Your title tag is a direct relevance signal to Google and the primary thing a searcher reads before deciding whether to click. A well-written title tag that leads with the target keyword and gives a compelling reason to click beats a vague or stuffed one every time.</p>
-  <p>Google rewrites about 20% of title tags in search results. If yours are regularly getting rewritten, it usually means they are misleading, too short, or do not match the page content. Fix the content, not just the tag.</p>
-
-  <h3>Content depth and topical coverage</h3>
-  <p>Google's Helpful Content updates have consistently rewarded pages that thoroughly cover a topic over pages that superficially hit keyword targets. Thin pages that existed to rank for one phrase have taken significant hits.</p>
-  <p>Comprehensive does not mean long for the sake of it. It means actually answering the questions a searcher has, including the follow-up questions. A 600-word page that answers everything the searcher needs beats a 3,000-word page padded with filler.</p>
-
-  <h3>Internal linking</h3>
-  <p>Internal links are one of the most underused ranking tools in on-page SEO. They pass authority between pages, help Google understand your site structure, and signal topical relationships between content. A page buried three clicks deep from the homepage with no internal links pointing to it will struggle to rank even if the content is excellent.</p>
-  <p>Audit your internal links annually at minimum. Look for high-value pages with few links pointing to them and existing pages where a contextual internal link would make sense.</p>
-
-  <h3>Page experience signals</h3>
-  <p>Core Web Vitals, mobile usability, HTTPS, and page speed are confirmed ranking factors. They are not the most powerful ranking factors, but they are the floor. A page that loads in six seconds or shifts layout while loading is penalized relative to competitors who have addressed those issues.</p>
-
-  <h3>Heading structure</h3>
-  <p>One H1 per page, containing the primary keyword. H2s and H3s that logically organize the content and incorporate semantically related terms. This structure helps both Google parse the content and users navigate it. It is not complicated, but a surprising number of sites still have missing H1s, multiple H1s, or heading structures that bear no relationship to the actual content hierarchy.</p>
-
-  <h2>What matters, but less than people think</h2>
-
-  <h3>Keyword density</h3>
-  <p>There is no target keyword density that improves rankings. Writing naturally about a topic produces the keyword frequency that makes sense. Manually calculating and adjusting keyword density is a waste of time and produces awkward copy. Google is reading for meaning, not counting instances of a phrase.</p>
-
-  <h3>Meta descriptions</h3>
-  <p>Meta descriptions are not a direct ranking factor. Google ignores them for ranking purposes. They matter for click-through rate because they appear under your title in search results, but Google rewrites them for roughly 70% of searches anyway. Write them well enough to be useful if they do appear, but do not spend excessive time perfecting them at the expense of higher-leverage work.</p>
-
-  <h3>Image alt text</h3>
-  <p>Alt text matters for accessibility (which is reason enough to do it correctly) and for image search, where it is an actual ranking factor. For regular web search, it is a very minor signal. Write accurate, descriptive alt text for all images. Do not keyword stuff it. Then move on.</p>
-
-  <h2>What you can mostly stop worrying about</h2>
-
-  <h3>Exact-match keyword repetition</h3>
-  <p>Google's natural language processing has evolved to the point where it understands synonyms, related concepts, and contextual meaning well. You do not need to use your exact target phrase five times in a specific ratio. Use it naturally, use related terms, and write for humans.</p>
-
-  <h3>Meta keywords</h3>
-  <p>Meta keywords have been ignored by Google since 2009. If you are still adding them, they are doing nothing for your rankings. Stop spending time on them.</p>
-
-  <h3>H1 as a primary ranking booster</h3>
-  <p>Your H1 should contain your primary keyword because that is good practice and it helps users understand the page. But obsessing over H1 optimization as a primary ranking lever is misplaced. It is table stakes, not a differentiator.</p>
-
-  <h2>Where most sites are leaving easy wins</h2>
-  <p>In practice, the highest-ROI on-page opportunities I find most consistently are:</p>
-  <ul>
-    <li><strong>Pages with high impressions but low CTR in Search Console:</strong> A title tag and meta description rewrite can dramatically improve clicks without any ranking change. This is free traffic you are already earning but not capturing.</li>
-    <li><strong>Service pages with no clear target keyword:</strong> Many service pages are written as brochures, not as landing pages for specific searches. A focused rewrite around a specific query intent produces significant ranking improvements.</li>
-    <li><strong>Pages ranking in positions 8 to 20:</strong> These pages are close. A content expansion and internal linking push frequently moves them to page one within weeks.</li>
-    <li><strong>Missing or duplicate title tags:</strong> An audit of any site with more than 20 pages will almost always surface several pages with identical, missing, or auto-generated title tags. Fixing them is fast and the impact is immediate.</li>
-  </ul>
-
-  <div class="article-cta">
-    <h3>Want an on-page SEO audit for your site?</h3>
-    <p>I audit on-page elements across your full site and prioritize fixes by potential impact. You get a clear list of what to fix, in what order, and why.</p>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('contact');if(el)el.scrollIntoView({behavior:'smooth'});},80)" class="btn-p">Get in touch</a>
-  </div>
-</div>
-
-<footer>
-  <div style="font-family:&#39;Fraunces&#39;,serif;font-weight:700;font-size:1rem;color:var(--cream)">Maddie Conroy <span style="color:var(--accent)">SEO</span></div>
-  <div class="foot-links">
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('services');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Services</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('guides');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Guides</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('blog');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Blog</a>
-    <a href="javascript:void(0)" onclick="hidePage();setTimeout(function(){var el=document.getElementById('contact');if(el)el.scrollIntoView({behavior:'smooth'});},80)">Contact</a>
-  </div>
-  <div>© 2026 workwithmaddie.com</div>
-</footer>
+<div class="article-body"><p>On-page SEO advice has a long shelf life problem. Tactics that were gospel five years ago are either table stakes now, mildly useful, or actively counterproductive. This is a current-state look at what to prioritize in 2026.</p>
+<h2>What still matters, a lot</h2>
+<h3>Title tags</h3>
+<p>Still one of the highest-leverage on-page elements. Your title tag is a direct relevance signal to Google and the primary thing a searcher reads before deciding whether to click. Google rewrites about 20% of title tags. If yours are regularly getting rewritten, they are misleading, too short, or do not match the page content.</p>
+<h3>Content depth and topical coverage</h3>
+<p>Google's Helpful Content updates have consistently rewarded pages that thoroughly cover a topic. Comprehensive does not mean long for the sake of it. It means actually answering the questions a searcher has, including the follow-up questions.</p>
+<h3>Internal linking</h3>
+<p>Internal links are one of the most underused ranking tools in on-page SEO. They pass authority between pages, help Google understand your site structure, and signal topical relationships between content.</p>
+<h3>Heading structure</h3>
+<p>One H1 per page, containing the primary keyword. H2s and H3s that logically organize the content and incorporate semantically related terms. A surprising number of sites still have missing H1s, multiple H1s, or heading structures that bear no relationship to the actual content hierarchy.</p>
+<h2>What matters, but less than people think</h2>
+<h3>Keyword density</h3>
+<p>There is no target keyword density that improves rankings. Writing naturally about a topic produces the keyword frequency that makes sense. Google is reading for meaning, not counting instances of a phrase.</p>
+<h3>Meta descriptions</h3>
+<p>Meta descriptions are not a direct ranking factor. Google ignores them for ranking purposes and rewrites them for roughly 70% of searches. Write them well enough to be useful if they do appear, but do not spend excessive time on them.</p>
+<h2>Where most sites are leaving easy wins</h2>
+<ul><li><strong>Pages with high impressions but low CTR in Search Console:</strong> A title tag rewrite can dramatically improve clicks without any ranking change.</li><li><strong>Service pages with no clear target keyword:</strong> Many service pages are written as brochures, not landing pages for specific searches.</li><li><strong>Pages ranking in positions 8 to 20:</strong> A content expansion and internal linking push frequently moves them to page one within weeks.</li><li><strong>Missing or duplicate title tags:</strong> An audit of any site with more than 20 pages will almost always surface several. Fixing them is fast and the impact is immediate.</li></ul>
+<div class="article-cta"><h3>Want an on-page SEO audit for your site?</h3><p>I audit on-page elements across your full site and prioritize fixes by potential impact. You get a clear list of what to fix, in what order, and why.</p><button class="btn-p" onclick="hidePage();setTimeout(function(){document.getElementById('contact').scrollIntoView({behavior:'smooth'})},80)">Get in touch</button></div></div>
 </div>
 
 <script>
-function showPage(id){
-  document.querySelectorAll('.page-overlay').forEach(function(el){el.classList.remove('active');});
+function scrollTo(id){
   var el = document.getElementById(id);
-  if(el){el.classList.add('active');el.scrollTop=0;window.scrollTo(0,0);}
-  else{console.log('Page not found: '+id);}
+  if(el) el.scrollIntoView({behavior:'smooth'});
+}
+function goHome(){
+  hidePage();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function showPage(id){
+  var el = document.getElementById(id);
+  if(el){
+    document.querySelectorAll('.page-overlay').forEach(function(o){o.classList.remove('active')});
+    el.classList.add('active');
+    window.scrollTo(0,0);
+  }
 }
 function hidePage(){
-  document.querySelectorAll('.page-overlay').forEach(function(el){el.classList.remove('active');});
+  document.querySelectorAll('.page-overlay').forEach(function(o){o.classList.remove('active')});
   window.scrollTo(0,0);
 }
-function scrollTo(id){
-  hidePage();
-  setTimeout(function(){
-    var el = document.getElementById(id);
-    if(el) el.scrollIntoView({behavior:'smooth'});
-  }, 80);
-}
-// Smooth scroll for all homepage anchor links
-document.addEventListener('click', function(e){
-  var t = e.target.closest('a');
-  if(!t) return;
-  var href = t.getAttribute('href');
-  if(!href) return;
-
-  // If we're inside an article overlay
-  var inOverlay = t.closest('.page-overlay');
-  if(inOverlay){
-    // eyebrow back links
-    if(t.closest('.article-eyebrow')){
-      e.preventDefault(); hidePage(); return;
-    }
-    // any anchor link inside article — go back to homepage section
-    if(href && href.startsWith('#')){
-      e.preventDefault();
-      var id = href.slice(1);
-      hidePage();
-      if(id){
-        setTimeout(function(){
-          var el = document.getElementById(id);
-          if(el) el.scrollIntoView({behavior:'smooth'});
-        }, 80);
-      }
-      return;
-    }
-    return;
-  }
-
-  // Homepage anchor links — smooth scroll
-  if(href && href.startsWith('#') && href.length > 1){
-    var id = href.slice(1);
-    var el = document.getElementById(id);
-    if(el){
-      e.preventDefault();
-      el.scrollIntoView({behavior:'smooth'});
-    }
-  }
-});
 </script>
 
-
-
-</body></html>
+</body>
+</html>
