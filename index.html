@@ -539,6 +539,7 @@ h1.article-title{font-size:clamp(2rem,4.5vw,3rem);color:var(--cream);letter-spac
 </div>
 
 <script>
+var scrollTo=function(id){var el=document.getElementById(id);if(el)el.scrollIntoView({behavior:"smooth"});};
 function goTo(id){
   var el = document.getElementById(id);
   if(el) el.scrollIntoView({behavior:'smooth'});
